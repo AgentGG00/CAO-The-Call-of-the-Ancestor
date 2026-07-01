@@ -4,12 +4,22 @@
   "type": "loot",
   "folder": "F_MAG_BASE",
   "system": {
-    "description": { "value": "<p>A 10-round magazine (LGT).</p>", "chat": "" },
+    "description": {
+      "value": "<p>A 10-round magazine (LGT).</p>",
+      "chat": ""
+    },
     "quantity": 1,
-    "weight": { "value": 0, "units": "lb" },
-    "price": { "value": 0, "denomination": "cp" },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
     "identified": true
   },
   "effects": [],
-  "flags": {}
+  "flags": {},
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_lgt.png"
 }

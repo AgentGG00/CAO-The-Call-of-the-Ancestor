@@ -2,7 +2,7 @@
   "_id": "call_of_the_ancestors",
   "name": "The Call of the Ancestors",
   "type": "weapon",
-  "img": "icons/weapons/swords/sword-runed-blue.webp",
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/weapon/Ruf_der_Ahnen.png",
   "folder": "F_WEAPONS",
   "system": {
     "description": {
@@ -10,20 +10,43 @@
       "chat": ""
     },
     "quantity": 1,
-    "weight": { "value": 0, "units": "lb" },
-    "price": { "value": 0, "denomination": "cp" },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
     "equipped": false,
     "identified": true,
-    "type": { "value": "martialM" },
+    "type": {
+      "value": "martialM"
+    },
     "weaponType": "martialM",
     "baseItem": "",
-    "properties": ["amm"],
-    "range": { "value": 80, "long": 320, "units": "ft" },
-    "activation": { "type": "action", "cost": 1, "condition": "" },
+    "properties": [
+      "amm"
+    ],
+    "range": {
+      "value": 80,
+      "long": 320,
+      "units": "ft"
+    },
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
     "actionType": "rwak",
     "ability": "dex",
     "damage": {
-      "parts": [["1d10 + @mod", "piercing"]],
+      "parts": [
+        [
+          "1d10 + @mod",
+          "piercing"
+        ]
+      ],
       "versatile": ""
     }
   },

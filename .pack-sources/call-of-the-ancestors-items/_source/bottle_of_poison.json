@@ -4,12 +4,22 @@
   "type": "loot",
   "folder": "F_MATERIALS",
   "system": {
-    "description": { "value": "<p>Crafting material.</p>", "chat": "" },
+    "description": {
+      "value": "<p>Crafting material.</p>",
+      "chat": ""
+    },
     "quantity": 1,
-    "weight": { "value": 0, "units": "lb" },
-    "price": { "value": 2, "denomination": "sp" },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
     "identified": true
   },
   "effects": [],
-  "flags": {}
+  "flags": {},
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bottle_of_poison.png"
 }

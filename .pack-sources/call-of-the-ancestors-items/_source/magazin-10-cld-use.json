@@ -4,10 +4,19 @@
   "type": "loot",
   "folder": "F_MAG_USE",
   "system": {
-    "description": { "value": "<p>A 10-round magazine (CLD).</p>", "chat": "" },
+    "description": {
+      "value": "<p>A 10-round magazine (CLD).</p>",
+      "chat": ""
+    },
     "quantity": 1,
-    "weight": { "value": 0, "units": "lb" },
-    "price": { "value": 0, "denomination": "cp" },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
     "identified": true,
     "uses": {
       "max": "10",
@@ -20,5 +29,6 @@
   "flags": {
     "cao-use-magazin": true,
     "cao-cold": true
-  }
+  },
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_cld.png"
 }
