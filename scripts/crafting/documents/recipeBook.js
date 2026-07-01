@@ -95,14 +95,14 @@ export class RecipeBook {
         let data = this.toObject();
         data = cleanIdsRecursive(data);
         data.documentName = this.documentName;
-        saveDataToFile(JSON.stringify(data, null, 2), "text/json", `mastercrafted-${this.documentName}-${this.name.slugify()}.json`);
+        saveDataToFile(JSON.stringify(data, null, 2), "text/json", `cao-the-call-of-the-ancestors-${this.documentName}-${this.name.slugify()}.json`);
     }
 
     async import() {
         new Dialog(
             {
                 title: `Import Data: ${this.name}`,
-                content: await renderTemplate("templates/apps/import-data.hbs", {
+                content: await renderTemplate("templates/crafting/apps/import-data.hbs", {
                     hint1: game.i18n.format("DOCUMENT.ImportDataHint1", { document: this.documentName }),
                     hint2: game.i18n.format("DOCUMENT.ImportDataHint2", { name: this.name }),
                 }),

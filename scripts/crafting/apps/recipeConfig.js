@@ -24,7 +24,7 @@ export class RecipeConfig extends FormApplication{
 
     async _render(...args){
         await super._render(...args);
-        document.querySelector("#mastercrafted-recipeConfig .window-title").innerHTML = this.getTitle();
+        document.querySelector("#cao-the-call-of-the-ancestors-recipeConfig .window-title").innerHTML = this.getTitle();
     }
 
     static get defaultOptions() {
@@ -32,7 +32,7 @@ export class RecipeConfig extends FormApplication{
           ...super.defaultOptions,
           title: "",
           id: `${MODULE_ID}-recipeConfig`,
-          template: `modules/${MODULE_ID}/templates/recipeBookConfig.hbs`,
+          template: `modules/${MODULE_ID}/templates/crafting/recipeBookConfig.hbs`,
           width: 400,
         };
       }

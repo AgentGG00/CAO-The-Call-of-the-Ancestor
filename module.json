@@ -12,7 +12,7 @@
   "license": "MIT",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "14"
   },
   "relationships": {
     "systems": [
@@ -20,7 +20,7 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-          "minimum": "5.2.4"
+          "minimum": "5.2.5"
         }
       }
     ],
@@ -74,8 +74,8 @@
     }
   ],
   "esmodules": [
-    "scripts/config.js",
-    "scripts/main.js"
+    "scripts/crafting/config.js",
+    "scripts/weapon/main.js"
   ],
   "styles": [
     "styles/module.css"
@@ -94,7 +94,7 @@
       }
     }
   ],
-  "url": "https://github.com/AgentGGNik007/CAO-The-Call-of-the-Ancestor",
-  "manifest": "https://raw.githubusercontent.com/AgentGGNik007/CAO-The-Call-of-the-Ancestor/main/module.json",
-  "download": "https://github.com/AgentGGNik007/CAO-The-Call-of-the-Ancestor/releases/latest/download/module-latest.zip"
+  "url": "https://github.com/AgentGG00/CAO-The-Call-of-the-Ancestor",
+  "manifest": "https://raw.githubusercontent.com/AgentGG00/CAO-The-Call-of-the-Ancestor/main/module.json",
+  "download": "https://github.com/AgentGG00/CAO-The-Call-of-the-Ancestor/releases/latest/download/module-latest.zip"
 }

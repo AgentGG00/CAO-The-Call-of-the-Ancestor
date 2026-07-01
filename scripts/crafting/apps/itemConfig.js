@@ -14,7 +14,7 @@ export class ItemConfig extends FormApplication{
             title: game.i18n.localize(`${MODULE_ID}.itemConfig.title`),
             id: `${MODULE_ID}-item-config`,
             classes: [],
-            template: `modules/${MODULE_ID}/templates/itemConfig.hbs`,
+            template: `modules/${MODULE_ID}/templates/crafting/itemConfig.hbs`,
             resizable: false,
             width: 400,
             dragDrop: [{dragSelector: null, dropSelector: null}],

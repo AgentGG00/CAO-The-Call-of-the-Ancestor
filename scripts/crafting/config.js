@@ -7,7 +7,7 @@ import { ItemConfig } from './apps/itemConfig.js';
 Hooks.once('setup', () => { 
   CONFIG.TextEditor.enrichers.push({
     id: MASTERCRAFTED_CONST.MODULE_ID,
-    pattern: /@mastercrafted\[(.*?)\]/g,
+    pattern: /@cao-the-call-of-the-ancestors\[(.*?)\]/g,
     enricher: (match, content) => { 
       try{
       const [bid, rid] = match[1].split(".");
@@ -111,8 +111,8 @@ Hooks.on("renderItemDirectory", (app, html) => {
 Hooks.on("getActorSheetHeaderButtons", (app, buttons) => {
   if (app.object.isOwner) {    
     buttons.unshift({
-      label: "mastercrafted.craft",
-      class: "mastercrafted",
+      label: "cao-the-call-of-the-ancestors.craft",
+      class: "cao-the-call-of-the-ancestors",
       icon: "fas fa-hammer",
       onclick: () => {new RecipeApp(app.object).render(true);}
     });
@@ -123,8 +123,8 @@ Hooks.on("getActorSheetHeaderButtons", (app, buttons) => {
 Hooks.on("getHeaderControlsActorSheetV2", (app, controls) => {
   if (app.document && app.document.isOwner) {    
     controls.push({
-      label: "mastercrafted.craft",
-      action: "mastercrafted",
+      label: "cao-the-call-of-the-ancestors.craft",
+      action: "cao-the-call-of-the-ancestors",
       icon: "fas fa-hammer",
       onClick: () => {new RecipeApp(app.document).render(true);}
     });
@@ -135,7 +135,7 @@ Hooks.on("getHeaderControlsActorSheetV2", (app, controls) => {
 Hooks.on("getItemSheetHeaderButtons", (app, buttons) => {
   if (ui.RecipeApp._currentApp.getRecipesByIngredient(app.object.name).length) {    
     buttons.unshift({
-      class: "mastercrafted",
+      class: "cao-the-call-of-the-ancestors",
       icon: "fas fa-hammer",
       onclick: () => {new RecipeApp(null,null, app.object.name).render(true);}
     });
@@ -145,7 +145,7 @@ Hooks.on("getItemSheetHeaderButtons", (app, buttons) => {
 Hooks.on("getHeaderControlsDocumentSheetV2", (app, controls) => {
   if (app.document.documentName === "Item" && ui.RecipeApp._currentApp.getRecipesByIngredient(app.document.name).length) {    
     controls.push({
-      label: "mastercrafted.show-recipes",
+      label: "cao-the-call-of-the-ancestors.show-recipes",
       icon: "fas fa-hammer",
       onClick: () => {new RecipeApp(null,null, app.document.name).render(true);}
     });
@@ -155,8 +155,8 @@ Hooks.on("getHeaderControlsDocumentSheetV2", (app, controls) => {
 Hooks.on("getApplicationHeaderButtons", (app, buttons) => {
   if (app.actor && app.actor.isOwner) {    
     buttons.unshift({
-      label: "mastercrafted.craft",
-      class: "mastercrafted",
+      label: "cao-the-call-of-the-ancestors.craft",
+      class: "cao-the-call-of-the-ancestors",
       icon: "fas fa-hammer",
       onclick: () => {new RecipeApp(app.actor).render(true);}
     });
@@ -167,7 +167,7 @@ Hooks.on("getApplicationHeaderButtons", (app, buttons) => {
 Hooks.on("item-piles-preRightClickItem", (item, buttons, actor) => {
   if (ui.RecipeApp._currentApp.getRecipesByIngredient(item.name).length) {    
     buttons.push({
-      label: "mastercrafted.show-recipes",
+      label: "cao-the-call-of-the-ancestors.show-recipes",
       icon: "fas fa-hammer",
       onPress: () => {new RecipeApp(actor,null, item.name).render(true);}
     });

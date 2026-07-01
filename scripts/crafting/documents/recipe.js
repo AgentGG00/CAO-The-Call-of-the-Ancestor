@@ -65,7 +65,7 @@ export class Recipe {
     }
 
     async craftPrompt(actor, componentsToConsume, product) {
-        let content = await renderTemplate(`modules/${MASTERCRAFTED_CONST.MODULE_ID}/templates/craftingPrompt.hbs`, { componentsToConsume, product });
+        let content = await renderTemplate(`modules/${MASTERCRAFTED_CONST.MODULE_ID}/templates/crafting/craftingPrompt.hbs`, { componentsToConsume, product });
         content = await TextEditor.enrichHTML(content);
         new Dialog({
             title: game.i18n.localize(`${MASTERCRAFTED_CONST.MODULE_ID}.craftDialog.title`),
@@ -217,7 +217,7 @@ export class Recipe {
     }
 
     async _postToChat(actor, componentsToConsume, product) {
-        let content = await renderTemplate(`modules/${MASTERCRAFTED_CONST.MODULE_ID}/templates/craftingChat.hbs`, { componentsToConsume, product, rName: this.name, recipe: this });
+        let content = await renderTemplate(`modules/${MASTERCRAFTED_CONST.MODULE_ID}/templates/crafting/craftingChat.hbs`, { componentsToConsume, product, rName: this.name, recipe: this });
         content = await TextEditor.enrichHTML(content);
         ChatMessage.create(
             ChatMessage.applyRollMode(
@@ -384,14 +384,14 @@ export class Recipe {
         let data = this.toObject();
         data = cleanIdsRecursive(data);
         data.documentName = this.documentName;
-        saveDataToFile(JSON.stringify(data, null, 2), "text/json", `mastercrafted-${this.documentName}-${this.name.slugify()}.json`);
+        saveDataToFile(JSON.stringify(data, null, 2), "text/json", `cao-the-call-of-the-ancestors-${this.documentName}-${this.name.slugify()}.json`);
     }
 
     async import() {
         new Dialog(
             {
                 title: `Import Data: ${this.name}`,
-                content: await renderTemplate("templates/apps/import-data.hbs", {
+                content: await renderTemplate("templates/crafting/apps/import-data.hbs", {
                     hint1: game.i18n.format("DOCUMENT.ImportDataHint1", { document: this.documentName }),
                     hint2: game.i18n.format("DOCUMENT.ImportDataHint2", { name: this.name }),
                 }),

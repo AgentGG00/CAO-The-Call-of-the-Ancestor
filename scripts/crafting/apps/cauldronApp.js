@@ -22,7 +22,7 @@ export class CauldronApp extends FormApplication {
             title: game.i18n.localize(`${MODULE_ID}.cauldronApp.title`),
             id: `${MODULE_ID}-cauldronApp`,
             classes: [],
-            template: `modules/${MODULE_ID}/templates/cauldronApp.hbs`,
+            template: `modules/${MODULE_ID}/templates/crafting/cauldronApp.hbs`,
             resizable: false,
             width: 400,
             dragDrop: [{ dragSelector: null, dropSelector: null }],
@@ -168,7 +168,7 @@ export class CauldronApp extends FormApplication {
 
     async _onBrewSuccess(recipe) {
         ChatMessage.create({
-            content: await renderTemplate(`modules/${MODULE_ID}/templates/brewChat.hbs`, { recipe, userId: game.user.id, success: true }),
+            content: await renderTemplate(`modules/${MODULE_ID}/templates/crafting/brewChat.hbs`, { recipe, userId: game.user.id, success: true }),
             speaker: ChatMessage.getSpeaker({ actor: this._actor }),
             whisper: [game.user.id, ...game.users.filter((u) => u.isGM).map((u) => u.id)],
         });
@@ -191,7 +191,7 @@ export class CauldronApp extends FormApplication {
         const message = game.i18n.localize(`${MODULE_ID}.cauldronApp.partial.${messageKey}`);
 
         ChatMessage.create({
-            content: await renderTemplate(`modules/${MODULE_ID}/templates/brewChat.hbs`, { message, ingredients, userId: game.user.id, success: false }),
+            content: await renderTemplate(`modules/${MODULE_ID}/templates/crafting/brewChat.hbs`, { message, ingredients, userId: game.user.id, success: false }),
             speaker: ChatMessage.getSpeaker({ actor: this._actor }),
             whisper: [game.user.id, ...game.users.filter((u) => u.isGM).map((u) => u.id)],
         });

@@ -1,5 +1,5 @@
 export const MASTERCRAFTED_CONST = {
-    MODULE_ID: 'mastercrafted',
+    MODULE_ID: 'cao-the-call-of-the-ancestors',
     INGREDIENT: {
         IMG: "",
     },
@@ -14,9 +14,9 @@ export const MASTERCRAFTED_CONST = {
     },
     CONFIG: {
         PERMISSION_CHOICES: {
-            0: "mastercrafted.recipeApp.configbookrecipe.permissions.default",
-            1: "mastercrafted.recipeApp.configbookrecipe.permissions.allow",
-            2: "mastercrafted.recipeApp.configbookrecipe.permissions.deny",
+            0: "cao-the-call-of-the-ancestors.recipeApp.configbookrecipe.permissions.default",
+            1: "cao-the-call-of-the-ancestors.recipeApp.configbookrecipe.permissions.allow",
+            2: "cao-the-call-of-the-ancestors.recipeApp.configbookrecipe.permissions.deny",
         }
     }
 }

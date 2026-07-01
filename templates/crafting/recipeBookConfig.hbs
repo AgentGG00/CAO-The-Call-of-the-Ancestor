@@ -1,20 +1,20 @@
 <form>
     <div class="form-group">
-        <label>{{localize "mastercrafted.recipeApp.editcreatebook.name"}}</label>
+        <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.name"}}</label>
         <div class="form-fields">
-            <input type="text" name="name" placeholder="{{localize "mastercrafted.recipeApp.editcreatebook.namep"}}" value="{{name}}" autofocus="">
+            <input type="text" name="name" placeholder="{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.namep"}}" value="{{name}}" autofocus="">
         </div>
     </div>
 
     <div class="form-group">
-        <label>{{localize "mastercrafted.recipeApp.editcreatebook.description"}}</label>
+        <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.description"}}</label>
         <div class="form-fields">
             <textarea type="text" name="description">{{description}}</textarea>
         </div>
     </div>
 
     <div class="form-group">
-            <label for="texture.src">{{localize "mastercrafted.recipeApp.editcreatebook.image"}}</label>
+            <label for="texture.src">{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.image"}}</label>
             <div class="form-fields">
                 {{filePicker target="img" type="image"}}
                 <input type="text" class="image" name="img" value="{{img}}">
@@ -22,7 +22,7 @@
     </div>
 
     <div class="form-group">
-        <label for="sound">{{localize "mastercrafted.recipeApp.editcreatebook.sound"}}</label>
+        <label for="sound">{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.sound"}}</label>
         <div class="form-fields">
             {{filePicker target="sound" type="audio"}}
             <input type="text" name="sound" value="{{sound}}">
@@ -30,14 +30,14 @@
     </div>
 
     <div class="form-group">
-            <label>{{localize "mastercrafted.recipeApp.editcreatebook.tools"}}</label>
+            <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.tools"}}</label>
             <div class="form-fields">
-                <input type="text" name="tools" placeholder="{{localize "mastercrafted.recipeApp.editcreatebook.toolsplaceholder"}}" value="{{tools}}">
+                <input type="text" name="tools" placeholder="{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.toolsplaceholder"}}" value="{{tools}}">
             </div>
     </div>
 
     <div class="form-group">
-        <label>{{localize "mastercrafted.recipeApp.recipeconfig.ingredientsInspection"}}</label>
+        <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.recipeconfig.ingredientsInspection"}}</label>
         <div class="form-fields">
             <select name="ingredientsInspection">
                 {{selectOptions choices selected=ingredientsInspection localize=true}}
@@ -46,7 +46,7 @@
     </div>
 
     <div class="form-group">
-        <label>{{localize "mastercrafted.recipeApp.recipeconfig.productInspection"}}</label>
+        <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.recipeconfig.productInspection"}}</label>
         <div class="form-fields">
             <select name="productInspection">
                 {{selectOptions choices selected=productInspection localize=true}}
@@ -55,20 +55,20 @@
     </div>
     {{#if isRecipe}}
             <div class="form-group">
-                <label>{{localize "mastercrafted.recipeApp.editcreatebook.macro"}}</label>
+                <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.macro"}}</label>
                 <div class="form-fields">
-                    <input type="text" name="macroName" placeholder="{{localize "mastercrafted.recipeApp.editcreatebook.macroplaceholder"}}" value="{{macroName}}">
+                    <input type="text" name="macroName" placeholder="{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.macroplaceholder"}}" value="{{macroName}}">
                 </div>
             </div>
             <div class="form-group">
-                <label>{{localize "mastercrafted.recipeApp.editcreatebook.time"}}</label>
+                <label>{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.time"}}</label>
                 <div class="form-fields">
-                    <input type="number" name="time" placeholder="{{localize "mastercrafted.recipeApp.editcreatebook.timeplaceholder"}}" value="{{time}}">
+                    <input type="number" name="time" placeholder="{{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.timeplaceholder"}}" value="{{time}}">
                 </div>
             </div>
     {{/if}}
     <hr>
-    <h4><i class="fas fa-users"></i> {{localize "mastercrafted.recipeApp.editcreatebook.permission"}}</h4>
+    <h4><i class="fas fa-users"></i> {{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.permission"}}</h4>
     <hr>
     
     {{#each users}}
@@ -83,5 +83,5 @@
     {{/each}}
     
 
-    <button type="submit"><i class="fas fa-check"></i> {{localize "mastercrafted.recipeApp.editcreatebook.confirm"}}</button>
+    <button type="submit"><i class="fas fa-check"></i> {{localize "cao-the-call-of-the-ancestors.recipeApp.editcreatebook.confirm"}}</button>
 </form>

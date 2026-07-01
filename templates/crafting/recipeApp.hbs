@@ -5,9 +5,9 @@
         <header class="directory-header">
             <div class="header-search flexrow" style="position: relative;">
                 {{#if craftMode}}
-                <i class="fa-solid fa-filter" id="filter" data-tooltip="{{localize "mastercrafted.recipeApp.filter"}}"></i>
+                <i class="fa-solid fa-filter" id="filter" data-tooltip="{{localize "cao-the-call-of-the-ancestors.recipeApp.filter"}}"></i>
                 {{/if}}
-                <input type="text" name="search" value="" autocomplete="off" placeholder="{{localize "mastercrafted.recipeApp.searchRecipe"}}">
+                <input type="text" name="search" value="" autocomplete="off" placeholder="{{localize "cao-the-call-of-the-ancestors.recipeApp.searchRecipe"}}">
             </div>
         </header>
 
@@ -39,7 +39,7 @@
         <div class="action-buttons flexrow">
             {{#unless craftMode}}
             <button class="create" type="button" data-action="createBook">
-                <i class="fas fa-book"></i> {{localize "mastercrafted.recipeApp.addRecipeBook"}}
+                <i class="fas fa-book"></i> {{localize "cao-the-call-of-the-ancestors.recipeApp.addRecipeBook"}}
             </button>
             {{/unless}}
         </div>
@@ -49,58 +49,58 @@
         {{#each recipeBooks}}
             {{#each recipes}}
 
-                <div class="mastercrafted-recipe hidden" data-book-id="{{../id}}" data-recipe-id="{{this.id}}">
-                    <header class="mastercrafted-recipe-header">
+                <div class="cao-the-call-of-the-ancestors-recipe hidden" data-book-id="{{../id}}" data-recipe-id="{{this.id}}">
+                    <header class="cao-the-call-of-the-ancestors-recipe-header">
                         <div class="title" {{#unless ../../craftMode}}style="justify-content: flex-start;"{{/unless}}>
                             <img src="{{this.img}}" alt="">
                             <h1>{{this.name}}</h1>
                             {{#if ../../craftMode}}
-                            <button class="create" type="button" data-action="craft" data-tooltip="{{localize "mastercrafted.recipeApp.craft"}}">
+                            <button class="create" type="button" data-action="craft" data-tooltip="{{localize "cao-the-call-of-the-ancestors.recipeApp.craft"}}">
                                 <i class="fas fa-hammer" style="pointer-events: none;"></i>
                             </button>
                             {{/if}}
                         </div>
                         {{#if this._hasTools}}
-                        <p>{{localize "mastercrafted.recipeApp.tools"}}: {{#each this._tools}} <span class="tool">{{this}}</span> {{/each}}</p>
+                        <p>{{localize "cao-the-call-of-the-ancestors.recipeApp.tools"}}: {{#each this._tools}} <span class="tool">{{this}}</span> {{/each}}</p>
                         {{/if}}
                         {{#if this.time}}
-                        <p>{{localize "mastercrafted.recipeApp.time"}}: <span class="tool">{{this.time}} {{localize "mastercrafted.recipeApp.minutes"}}</span></p>
+                        <p>{{localize "cao-the-call-of-the-ancestors.recipeApp.time"}}: <span class="tool">{{this.time}} {{localize "cao-the-call-of-the-ancestors.recipeApp.minutes"}}</span></p>
                         {{/if}}
                         {{#if this.description}}
                         <p>{{{this.description}}}</p>
                         {{/if}}
                     </header>
-                    <h3{{#if ../../craftMode}} data-tooltip="{{localize "mastercrafted.recipeApp.ingredientsTooltip"}}"{{/if}}>{{localize "mastercrafted.recipeApp.recipeconfig.ingredients"}}</h3>
-                    <div class="mastercrafted-ingredients">
+                    <h3{{#if ../../craftMode}} data-tooltip="{{localize "cao-the-call-of-the-ancestors.recipeApp.ingredientsTooltip"}}"{{/if}}>{{localize "cao-the-call-of-the-ancestors.recipeApp.recipeconfig.ingredients"}}</h3>
+                    <div class="cao-the-call-of-the-ancestors-ingredients">
                         {{#each ingredients}}
-                            <div class="mastercrafted-ingredient" data-ingredient-id="{{this.id}}">
+                            <div class="cao-the-call-of-the-ancestors-ingredient" data-ingredient-id="{{this.id}}">
                                 {{#each components}}
-                                    <div class="mastercrafted-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}" data-tooltip="{{this.name}} (x{{this.quantity}})" style="background-image: url('{{this.img}}');">
-                                        <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="mastercrafted-component-amount" value="{{this.quantity}}">
+                                    <div class="cao-the-call-of-the-ancestors-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}" data-tooltip="{{this.name}} (x{{this.quantity}})" style="background-image: url('{{this.img}}');">
+                                        <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="cao-the-call-of-the-ancestors-component-amount" value="{{this.quantity}}">
                                     </div>
                                 {{/each}}
                             </div>
                         {{/each}}
                         {{#unless ../../craftMode}}
-                        <div class="mastercrafted-ingredient">
+                        <div class="cao-the-call-of-the-ancestors-ingredient">
                             <span class="empty-ingredient">+</span>
                         </div>
                         {{/unless}}
                     </div>
-                    <h3{{#if ../../craftMode}} data-tooltip="{{localize "mastercrafted.recipeApp.resultTooltip"}}"{{/if}}>{{localize "mastercrafted.recipeApp.recipeconfig.result"}}</h3>
-                    <div class="mastercrafted-results">
+                    <h3{{#if ../../craftMode}} data-tooltip="{{localize "cao-the-call-of-the-ancestors.recipeApp.resultTooltip"}}"{{/if}}>{{localize "cao-the-call-of-the-ancestors.recipeApp.recipeconfig.result"}}</h3>
+                    <div class="cao-the-call-of-the-ancestors-results">
                         {{#each products}}
-                        <div class="mastercrafted-result" data-result-id="{{this.id}}">
+                        <div class="cao-the-call-of-the-ancestors-result" data-result-id="{{this.id}}">
                             {{#each components}}
-                            <div class="mastercrafted-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}"
+                            <div class="cao-the-call-of-the-ancestors-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}"
                                 data-tooltip="{{this.name}}" style="background-image: url('{{this.img}}');">
-                                <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="mastercrafted-component-amount" value="{{this.quantity}}">
+                                <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="cao-the-call-of-the-ancestors-component-amount" value="{{this.quantity}}">
                             </div>
                             {{/each}}
                         </div>
                         {{/each}}
                         {{#unless ../../craftMode}}
-                        <div class="mastercrafted-result">
+                        <div class="cao-the-call-of-the-ancestors-result">
                             <span class="empty-result">+</span>
                         </div>
                         {{/unless}}

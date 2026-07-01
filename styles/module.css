@@ -7,7 +7,7 @@
     white-space: break-spaces;
 }
 
-#mastercrafted-recipeApp #filter {
+#cao-the-call-of-the-ancestors-recipeApp #filter {
     position: absolute;
     right: 1rem;
     color: var(--color-text-dark-secondary);
@@ -15,17 +15,17 @@
     align-self: center;
 }
 
-#mastercrafted-recipeApp .recipe-book-img {
+#cao-the-call-of-the-ancestors-recipeApp .recipe-book-img {
     border-radius: 5px;
     margin: 0 0.3rem;
 }
 
-#mastercrafted-recipeApp .recipe {
+#cao-the-call-of-the-ancestors-recipeApp .recipe {
     flex-direction: row;
     align-items: center;
 }
 
-#mastercrafted-recipeApp .recipe-img {
+#cao-the-call-of-the-ancestors-recipeApp .recipe-img {
     flex: 0 0 1.5rem;
     height: 1.5rem;
     width: 1.5rem;
@@ -33,56 +33,56 @@
     margin: 0 0.3rem;
 }
 
-#mastercrafted-recipeApp .recipe-img.can-craft {
+#cao-the-call-of-the-ancestors-recipeApp .recipe-img.can-craft {
     border: 1px solid var(--color-level-info);
     animation: box-shadow-pulse 1s infinite alternate;
 }
 
-#mastercrafted-recipeApp button.create {
+#cao-the-call-of-the-ancestors-recipeApp button.create {
     margin: 0.5rem 0.5rem;
 }
 
-#mastercrafted-recipeApp .recipe .page-title:hover {
+#cao-the-call-of-the-ancestors-recipeApp .recipe .page-title:hover {
     cursor: pointer;
     color: inherit;
     text-shadow: 0 0 8px var(--color-shadow-primary);
 }
 
-#mastercrafted-recipeApp.sheet.journal-entry .pages-list .page-heading.recipe-book-header {
+#cao-the-call-of-the-ancestors-recipeApp.sheet.journal-entry .pages-list .page-heading.recipe-book-header {
     overflow: visible;
 }
 
-#mastercrafted-recipeApp .headings.recipe-list {
+#cao-the-call-of-the-ancestors-recipeApp .headings.recipe-list {
     display: none;
 }
 
-#mastercrafted-recipeApp .expanded .headings.recipe-list,
-#mastercrafted-recipeApp .force-expanded .headings.recipe-list {
+#cao-the-call-of-the-ancestors-recipeApp .expanded .headings.recipe-list,
+#cao-the-call-of-the-ancestors-recipeApp .force-expanded .headings.recipe-list {
     display: block;
 }
 
-#mastercrafted-recipeApp .expanded,
-#mastercrafted-recipeApp .force-expanded {
+#cao-the-call-of-the-ancestors-recipeApp .expanded,
+#cao-the-call-of-the-ancestors-recipeApp .force-expanded {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe.hidden {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe.hidden {
     display: none;
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe-header .title {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe-header .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe-header p {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe-header p {
     margin: 0 1rem;
     color: var(--color-text-dark-6);
     font-size: smaller;
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe-header img {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe-header img {
     width: 4rem;
     height: 4rem;
     min-width: 4rem;
@@ -92,7 +92,7 @@
     border-radius: 5px;
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe-header button {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe-header button {
     width: 4rem;
     height: 4rem;
     min-width: 4rem;
@@ -100,21 +100,21 @@
     font-size: 2rem;
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe-header h1 {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe-header h1 {
     border: none;
 }
 
-#mastercrafted-recipeApp .mastercrafted-options {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-options {
     display: flex;
     justify-content: space-around;
 }
 
-#mastercrafted-recipeApp .mastercrafted-options select {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-options select {
     width: 100%;
 }
 
-#mastercrafted-recipeApp .mastercrafted-ingredient,
-#mastercrafted-recipeApp .mastercrafted-result {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-ingredient,
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-result {
     border: 2px dashed var(--color-border-light-tertiary);
     border-radius: 5px;
     min-width: 100px;
@@ -127,8 +127,8 @@
     gap: 1rem;
 }
 
-#mastercrafted-recipeApp .mastercrafted-ingredients,
-#mastercrafted-recipeApp .mastercrafted-results {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-ingredients,
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-results {
     display: flex;
     gap: 1rem;
     padding: 1rem;
@@ -136,15 +136,15 @@
     flex-wrap: wrap;
 }
 
-#mastercrafted-recipeApp .empty-ingredient,
-#mastercrafted-recipeApp .empty-result {
+#cao-the-call-of-the-ancestors-recipeApp .empty-ingredient,
+#cao-the-call-of-the-ancestors-recipeApp .empty-result {
     font-size: 5rem;
     color: var(--color-border-light-tertiary);
     pointer-events: none;
     line-height: 0;
 }
 
-#mastercrafted-recipeApp h3 {
+#cao-the-call-of-the-ancestors-recipeApp h3 {
     margin: 0 0 0.25em 0;
     padding: 2px 1rem;
     border-top: 2px groove #eeede0;
@@ -155,7 +155,7 @@
     text-align: center;
 }
 
-#mastercrafted-recipeApp .component-img {
+#cao-the-call-of-the-ancestors-recipeApp .component-img {
     height: 50px;
     width: 50px;
     background-size: contain;
@@ -165,7 +165,7 @@
     cursor: pointer;
 }
 
-#mastercrafted-recipeApp .mastercrafted-recipe input {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-recipe input {
     background-color: var(--color-text-hyperlink);
     text-align: center;
     right: 0;
@@ -179,56 +179,56 @@
     opacity: 0.7;
 }
 
-#mastercrafted-recipeApp .component-img.selected {
+#cao-the-call-of-the-ancestors-recipeApp .component-img.selected {
     outline: 2px solid var(--color-text-hyperlink);
     box-shadow: 0 0 10px var(--color-text-hyperlink);
 }
 
-#mastercrafted-recipeApp .mastercrafted-result.selected {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-result.selected {
     border-color: var(--color-text-hyperlink);
     box-shadow: 0 0 10px var(--color-text-hyperlink);
 }
 
-#mastercrafted-recipeApp .mastercrafted-ingredient.owned {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-ingredient.owned {
     border-color: var(--color-level-info);
     box-shadow: 0 0 10px var(--color-level-info);
 }
 
-#mastercrafted-recipeApp .mastercrafted-ingredient.missing {
+#cao-the-call-of-the-ancestors-recipeApp .cao-the-call-of-the-ancestors-ingredient.missing {
     border-color: var(--color-border-highlight-alt);
     box-shadow: 0 0 10px var(--color-border-highlight-alt);
 }
 
-#mastercrafted-recipeApp .component-img.missing,
-.mastercrafted-result.missing {
+#cao-the-call-of-the-ancestors-recipeApp .component-img.missing,
+.cao-the-call-of-the-ancestors-result.missing {
     filter: grayscale(1);
 }
 
-#mastercrafted-recipeApp .tool {
+#cao-the-call-of-the-ancestors-recipeApp .tool {
     font-weight: 600;
     margin: 0rem 0.3rem;
 }
 
-#mastercrafted-recipeApp .page-title {
+#cao-the-call-of-the-ancestors-recipeApp .page-title {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
-#mastercrafted-recipeApp .hidden {
+#cao-the-call-of-the-ancestors-recipeApp .hidden {
     display: none;
 }
 
-#mastercrafted-confirm-craft {
+#cao-the-call-of-the-ancestors-confirm-craft {
     padding-bottom: 1rem;
 }
 
-#mastercrafted-confirm-craft h3 {
+#cao-the-call-of-the-ancestors-confirm-craft h3 {
     text-align: center;
 }
 
-#mastercrafted-confirm-craft div,
-#mastercrafted-chat-message div {
+#cao-the-call-of-the-ancestors-confirm-craft div,
+#cao-the-call-of-the-ancestors-chat-message div {
     padding: 0.5rem 0;
     display: flex;
     gap: 1rem;
@@ -236,7 +236,7 @@
     justify-content: space-around;
 }
 
-#mastercrafted-chat-message div {
+#cao-the-call-of-the-ancestors-chat-message div {
     padding: 0.5rem 0;
     display: flex;
     gap: 1rem;
@@ -244,11 +244,11 @@
     justify-content: flex-start;
 }
 
-#mastercrafted-confirm-craft a {
+#cao-the-call-of-the-ancestors-confirm-craft a {
     font-size: large;
 }
 
-#mastercrafted-chat-message span {
+#cao-the-call-of-the-ancestors-chat-message span {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -258,13 +258,13 @@
     width: 100%;
 }
 
-#mastercrafted-chat-message img {
+#cao-the-call-of-the-ancestors-chat-message img {
     width: 36px;
     height: 36px;
     border: none;
 }
 
-.mastercrafted-content-link {
+.cao-the-call-of-the-ancestors-content-link {
     background: #ddd;
     padding: 1px 4px;
     border: 1px solid var(--color-border-dark-tertiary);
@@ -282,7 +282,7 @@
     }
 }
 
-#mastercrafted-cauldronApp .ingredients-container {
+#cao-the-call-of-the-ancestors-cauldronApp .ingredients-container {
     width: 100%;
     height: 150px;
     display: flex;
@@ -296,7 +296,7 @@
     border: 2px dashed var(--color-border-light-tertiary);
 }
 
-#mastercrafted-cauldronApp .cauldron-ingredient {
+#cao-the-call-of-the-ancestors-cauldronApp .cauldron-ingredient {
     width: 50px;
     height: 50px;
     background-size: contain;
@@ -304,7 +304,7 @@
     background-position: center;
 }
 
-#mastercrafted-cauldronApp .placeholder-item {
+#cao-the-call-of-the-ancestors-cauldronApp .placeholder-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +315,7 @@
     opacity: 0.5;
 }
 
-#mastercrafted-cauldronApp .placeholder-item i {
+#cao-the-call-of-the-ancestors-cauldronApp .placeholder-item i {
     font-size: 2.5rem;
 }
 

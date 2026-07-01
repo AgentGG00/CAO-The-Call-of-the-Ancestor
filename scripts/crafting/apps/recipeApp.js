@@ -37,7 +37,7 @@ export class RecipeApp extends FormApplication {
             title: game.i18n.localize(`${MODULE_ID}.recipeApp.title`),
             id: `${MODULE_ID}-recipeApp`,
             classes: ["sheet", "journal-sheet", "journal-entry"],
-            template: `modules/${MODULE_ID}/templates/recipeApp.hbs`,
+            template: `modules/${MODULE_ID}/templates/crafting/recipeApp.hbs`,
             resizable: true,
             width: 600,
             height: 680,
@@ -103,9 +103,9 @@ export class RecipeApp extends FormApplication {
             recipeBook._count = recipeBook.recipes.length;
             await recipeBook.loadDocuments();
         }
-        if (!this._userMode && ui._mastercraftedRelink) {
+        if (!this._userMode && ui._cao-the-call-of-the-ancestorsRelink) {
             this.close();
-            delete ui._mastercraftedRelink;
+            delete ui._cao-the-call-of-the-ancestorsRelink;
             for (let recipeBook of recipeBooks) {
                 await recipeBook.saveData();
             }
@@ -125,13 +125,13 @@ export class RecipeApp extends FormApplication {
         html.querySelectorAll(".recipe-name").forEach((book) => {
             book.addEventListener("click", (e) => this._onToggleRecipe(e));
         });
-        html.querySelectorAll(".mastercrafted-ingredient .mastercrafted-component.component-img").forEach((component) => {
-            const recipeId = component.closest(".mastercrafted-recipe").dataset.recipeId;
-            const bookId = component.closest(".mastercrafted-recipe").dataset.bookId;
-            const ingredientId = component.closest(".mastercrafted-ingredient").dataset.ingredientId;
+        html.querySelectorAll(".cao-the-call-of-the-ancestors-ingredient .cao-the-call-of-the-ancestors-component.component-img").forEach((component) => {
+            const recipeId = component.closest(".cao-the-call-of-the-ancestors-recipe").dataset.recipeId;
+            const bookId = component.closest(".cao-the-call-of-the-ancestors-recipe").dataset.bookId;
+            const ingredientId = component.closest(".cao-the-call-of-the-ancestors-ingredient").dataset.ingredientId;
             const componentId = component.dataset.componentId;
             const uuid = component.dataset.uuid;
-            const ingredientEl = component.closest(".mastercrafted-ingredient");
+            const ingredientEl = component.closest(".cao-the-call-of-the-ancestors-ingredient");
 
             component.addEventListener("click", async (event) => {
                 if (event.target != component) return;
@@ -143,7 +143,7 @@ export class RecipeApp extends FormApplication {
             component.addEventListener("contextmenu", async (event) => {
                 if (this._userMode) {
                     if (!component.classList.contains("missing")) {
-                        ingredientEl.querySelectorAll(".mastercrafted-component").forEach((c) => c.classList.remove("selected"));
+                        ingredientEl.querySelectorAll(".cao-the-call-of-the-ancestors-component").forEach((c) => c.classList.remove("selected"));
                         component.classList.add("selected");
                     }
                 } else {
@@ -157,10 +157,10 @@ export class RecipeApp extends FormApplication {
             });
         });
 
-        html.querySelectorAll(".mastercrafted-result .mastercrafted-component.component-img").forEach((component) => {
-            const recipeId = component.closest(".mastercrafted-recipe").dataset.recipeId;
-            const bookId = component.closest(".mastercrafted-recipe").dataset.bookId;
-            const resultId = component.closest(".mastercrafted-result").dataset.resultId;
+        html.querySelectorAll(".cao-the-call-of-the-ancestors-result .cao-the-call-of-the-ancestors-component.component-img").forEach((component) => {
+            const recipeId = component.closest(".cao-the-call-of-the-ancestors-recipe").dataset.recipeId;
+            const bookId = component.closest(".cao-the-call-of-the-ancestors-recipe").dataset.bookId;
+            const resultId = component.closest(".cao-the-call-of-the-ancestors-result").dataset.resultId;
             const componentId = component.dataset.componentId;
             const uuid = component.dataset.uuid;
 
@@ -235,10 +235,10 @@ export class RecipeApp extends FormApplication {
         const booksScroll = html.querySelector(".directory-list.scrollable");
         state.scrollTop = booksScroll.scrollTop;
         state.recipeScrollTop =
-            Array.from(html.querySelectorAll(".mastercrafted-recipe"))
+            Array.from(html.querySelectorAll(".cao-the-call-of-the-ancestors-recipe"))
                 .find((e) => !e.classList.contains("hidden"))
                 ?.closest("section")?.scrollTop ?? 0;
-        state.activeRecipe = Array.from(html.querySelectorAll(".mastercrafted-recipe")).find((e) => !e.classList.contains("hidden"))?.dataset?.recipeId;
+        state.activeRecipe = Array.from(html.querySelectorAll(".cao-the-call-of-the-ancestors-recipe")).find((e) => !e.classList.contains("hidden"))?.dataset?.recipeId;
         this._appState = state;
     }
 
@@ -249,10 +249,10 @@ export class RecipeApp extends FormApplication {
             book.classList.toggle("expanded", this._appState.books.includes(book.dataset.bookId));
         });
 
-        html.querySelector(`.mastercrafted-recipe[data-recipe-id="${this._appState.activeRecipe}"]`)?.classList?.toggle("hidden", false);
+        html.querySelector(`.cao-the-call-of-the-ancestors-recipe[data-recipe-id="${this._appState.activeRecipe}"]`)?.classList?.toggle("hidden", false);
         const booksScroll = html.querySelector(".directory-list.scrollable");
         booksScroll.scrollTop = this._appState.scrollTop;
-        Array.from(html.querySelectorAll(".mastercrafted-recipe")).forEach((recipe) => {
+        Array.from(html.querySelectorAll(".cao-the-call-of-the-ancestors-recipe")).forEach((recipe) => {
             if (!recipe.classList.contains("hidden")) recipe.closest("section").scrollTop = this._appState.recipeScrollTop;
         });
     }
@@ -264,7 +264,7 @@ export class RecipeApp extends FormApplication {
         Array.from(html.querySelectorAll(`.recipe-book`) ?? []).forEach((book) => {
             book.classList.toggle("expanded", bookId == book.dataset.bookId);
         });
-        Array.from(html.querySelectorAll(`.mastercrafted-recipe`) ?? []).forEach((recipe) => {
+        Array.from(html.querySelectorAll(`.cao-the-call-of-the-ancestors-recipe`) ?? []).forEach((recipe) => {
             recipe.classList.toggle("hidden", recipeId != recipe.dataset.recipeId);
         });
     }
@@ -398,16 +398,16 @@ export class RecipeApp extends FormApplication {
                     ingredients: {},
                     productId: "",
                 };
-                const recipeId = event.target.closest(".mastercrafted-recipe").dataset.recipeId;
-                const bookId = event.target.closest(".mastercrafted-recipe").dataset.bookId;
-                const recipeEl = event.target.closest(".mastercrafted-recipe");
-                const ingredientsEls = recipeEl.querySelectorAll(".mastercrafted-ingredient");
+                const recipeId = event.target.closest(".cao-the-call-of-the-ancestors-recipe").dataset.recipeId;
+                const bookId = event.target.closest(".cao-the-call-of-the-ancestors-recipe").dataset.bookId;
+                const recipeEl = event.target.closest(".cao-the-call-of-the-ancestors-recipe");
+                const ingredientsEls = recipeEl.querySelectorAll(".cao-the-call-of-the-ancestors-ingredient");
                 for (const ingredientEl of ingredientsEls) {
                     const ingredientId = ingredientEl.dataset.ingredientId;
-                    const selectedComponent = ingredientEl.querySelector(".mastercrafted-component.selected");
+                    const selectedComponent = ingredientEl.querySelector(".cao-the-call-of-the-ancestors-component.selected");
                     data.ingredients[ingredientId] = selectedComponent.dataset.componentId;
                 }
-                data.productId = recipeEl.querySelector(".mastercrafted-result.selected").dataset.resultId;
+                data.productId = recipeEl.querySelector(".cao-the-call-of-the-ancestors-result.selected").dataset.resultId;
                 RecipeBook.get(bookId).getRecipe(recipeId).craft(this._actor, data, event.ctrlKey);
                 break;
         }
@@ -465,9 +465,9 @@ export class RecipeApp extends FormApplication {
     }
 
     async _onDrop(event) {
-        const ingredientProductClosest = event.target.closest(".mastercrafted-ingredient, .mastercrafted-result");
-        const isIngredient = ingredientProductClosest?.classList.contains("mastercrafted-ingredient");
-        const isProduct = ingredientProductClosest?.classList.contains("mastercrafted-result");
+        const ingredientProductClosest = event.target.closest(".cao-the-call-of-the-ancestors-ingredient, .cao-the-call-of-the-ancestors-result");
+        const isIngredient = ingredientProductClosest?.classList.contains("cao-the-call-of-the-ancestors-ingredient");
+        const isProduct = ingredientProductClosest?.classList.contains("cao-the-call-of-the-ancestors-result");
         const isItemDrop = event.target.closest(".recipe-book");
         if (!isIngredient && !isProduct && !isItemDrop) return;
         let data;
@@ -487,8 +487,8 @@ export class RecipeApp extends FormApplication {
             recipe.addProduct(null, data.uuid, item.name);
             return;
         }
-        const recipeId = ingredientProductClosest.closest(".mastercrafted-recipe").dataset.recipeId;
-        const bookId = ingredientProductClosest.closest(".mastercrafted-recipe").dataset.bookId;
+        const recipeId = ingredientProductClosest.closest(".cao-the-call-of-the-ancestors-recipe").dataset.recipeId;
+        const bookId = ingredientProductClosest.closest(".cao-the-call-of-the-ancestors-recipe").dataset.bookId;
         const ingredientId = ingredientProductClosest.dataset.ingredientId;
         const productId = ingredientProductClosest.dataset.resultId;
         const recipe = RecipeBook.get(bookId).getRecipe(recipeId);
@@ -510,7 +510,7 @@ export class RecipeApp extends FormApplication {
     }
 
     _toggleRecipe(recipeId) {
-        const recipies = this.element[0].querySelectorAll(".mastercrafted-recipe");
+        const recipies = this.element[0].querySelectorAll(".cao-the-call-of-the-ancestors-recipe");
         for (let recipe of recipies) {
             recipe.classList.toggle("hidden", recipe.dataset.recipeId !== recipeId);
         }
@@ -545,7 +545,7 @@ export class RecipeApp extends FormApplication {
 
     async _processRecipes() {
         const html = this.element[0];
-        const recipes = html.querySelectorAll(".mastercrafted-recipe");
+        const recipes = html.querySelectorAll(".cao-the-call-of-the-ancestors-recipe");
         for (let recipe of recipes) {
             const recipeId = recipe.dataset.recipeId;
             const bookId = recipe.dataset.bookId;
@@ -572,7 +572,7 @@ export class RecipeApp extends FormApplication {
             }
             if (ownedIngredients.length === recipeDoc.ingredients.length) canCraft = true;
 
-            const products = recipe.querySelectorAll(".mastercrafted-result");
+            const products = recipe.querySelectorAll(".cao-the-call-of-the-ancestors-result");
             for (let product of products) {
                 if (!canCraft) {
                     product.classList.add("missing");

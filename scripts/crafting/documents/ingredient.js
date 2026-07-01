@@ -210,7 +210,7 @@ class Component {
             }
         }
         if (item && game.user.isGM) {
-            ui._mastercraftedRelink = true;
+            ui._cao-the-call-of-the-ancestorsRelink = true;
         }
         return item;
     }
