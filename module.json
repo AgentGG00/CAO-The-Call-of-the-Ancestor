@@ -23,13 +23,8 @@
           "minimum": "5.2.5"
         }
       }
-    ],
-    "requires": [
-      {
-        "id": "more-activities",
-        "type": "module"
-      }
     ]
+
   },
   "languages": [
     {
@@ -74,7 +69,7 @@
     }
   ],
   "esmodules": [
-    "scripts/crafting/config.js",
+    "scripts/crafting/main.js",
     "scripts/weapon/main.js"
   ],
   "styles": [
