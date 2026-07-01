@@ -1,0 +1,43 @@
+<div>
+    <div class="form-group">
+        <label for="name">{{localize "cao-the-call-of-the-ancestors.componentEditForm.name.label"}}</label>
+        <input type="text" name="name" value="{{component.name}}">
+        <p class="hint">{{localize "cao-the-call-of-the-ancestors.componentEditForm.name.hint"}}</p>
+    </div>
+    <div class="form-group">
+        <label for="img">{{localize "cao-the-call-of-the-ancestors.componentEditForm.img"}}</label>
+        <file-picker type="image" name="img" value="{{component.img}}"></file-picker>
+    </div>
+    <div class="form-group">
+        <label for="quantity">{{localize "cao-the-call-of-the-ancestors.componentEditForm.quantity"}}</label>
+        <input type="number" name="quantity" value="{{component.quantity}}">
+    </div>
+    <div class="form-group">
+        <label for="uuid">{{localize "cao-the-call-of-the-ancestors.componentEditForm.uuid.label"}}</label>
+        <document-tags single type="Item" name="uuid" value="{{component.uuid}}"></document-tags>
+        <p class="hint">{{localize "cao-the-call-of-the-ancestors.componentEditForm.uuid.hint"}}</p>
+    </div>
+    <fieldset>
+        <legend>{{localize "cao-the-call-of-the-ancestors.componentEditForm.resourcePath.title"}}</legend>
+        <p class="hint">{{localize "cao-the-call-of-the-ancestors.componentEditForm.resourcePath.hint"}}</p>
+        <div class="form-group">
+            <label for="resourcePath">{{localize "cao-the-call-of-the-ancestors.componentEditForm.resourcePath.label"}}</label>
+            <input type="text" name="resourcePath" value="{{component.resourcePath}}">
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>{{localize "cao-the-call-of-the-ancestors.componentEditForm.tags.title"}}</legend>
+        <p class="hint">{{localize "cao-the-call-of-the-ancestors.componentEditForm.tags.hint"}}</p>
+        <div class="form-group">
+            <label for="tags">{{localize "cao-the-call-of-the-ancestors.componentEditForm.tags.label"}}</label>
+            <string-tags name="tags" value="{{component.tags}}"></string-tags>
+        </div>
+        <div class="form-group">
+            <label for="mode">{{localize "cao-the-call-of-the-ancestors.componentEditForm.tags.mode.label"}}</label>
+            <select name="mode">
+                <option value="some" {{#if (eq component.mode "some")}} selected {{/if}}>{{localize "cao-the-call-of-the-ancestors.componentEditForm.tags.mode.some"}}</option>
+                <option value="every" {{#if (eq component.mode "every")}} selected {{/if}}>{{localize "cao-the-call-of-the-ancestors.componentEditForm.tags.mode.every"}}</option>
+            </select>
+        </div>
+    </fieldset>
+</div>

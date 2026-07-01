@@ -1,116 +1,219 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "cao-the-call-of-the-ancestors": {
+                "cao-the-call-of-the-ancestors": "CAOレシピ"
+            }
+        }
+    },
     "cao-the-call-of-the-ancestors": {
-        "UI": {
-            "default-recipe-name": "新しいレシピ",
-            "delete-recipe-book-content": "このレシピ本を削除してもよろしいですか？",
-            "delete-recipe-book-title": "レシピブックを削除",
-            "delete-recipe-content": "本当にこのレシピを削除しますか?",
-            "delete-recipe-title": "レシピを削除",
-            "no-permission": "このレシピまたは本を開く権限がありません。",
-            "open-recipe-app": "レシピマネージャー"
-        },
+        "cao-the-call-of-the-ancestors": "CAOレシピ",
         "craft": "クラフト",
+        "show-recipes": "レシピを表示",
         "craftDialog": {
+            "title": "クラフト",
+            "craft": "作成",
             "cancel": "キャンセル",
-            "consumes": "消費する",
-            "craft": "クラフト",
-            "crafted": "作成された",
-            "crafts": "工芸品",
-            "title": "クラフト"
+            "consumes": "消費",
+            "crafts": "作成物",
+            "crafted": "作成済み"
+        },
+        "componentEditForm": {
+            "title": "コンポーネント設定",
+            "name": {
+                "label": "名前",
+                "hint": "作成時に消費される素材アイテムを照合するために使用される名前。"
+            },
+            "img": "画像",
+            "quantity": "数量",
+            "uuid": {
+                "label": "アイテム",
+                "hint": "クリック時に表示されるアイテム。このアイテムを変更しても、コンポーネントの名前や画像は更新されません。"
+            },
+            "resourcePath": {
+                "title": "リソース設定",
+                "hint": "アクターのリソースへのパス。アイテムがインベントリにない場合、作成時にアイテムの代わりにアクターのリソースが消費されます。",
+                "label": "リソースパス"
+            },
+            "tags": {
+                "title": "タグ設定",
+                "hint": "このコンポーネントの代替アイテムを定義するタグのリスト。メインアイテムがインベントリにない場合、「いずれか」モードでは少なくとも1つのタグ、「すべて」モードではすべてのタグに一致するアイテムが使用されます。",
+                "label": "タグ",
+                "mode": {
+                    "label": "要求",
+                    "every": "すべて",
+                    "some": "いずれか"
+                }
+            }
         },
         "recipeApp": {
-            "addRecipeBook": "レシピブックを追加",
+            "errors": {
+                "namemissing": "名前フィールドは必須です!",
+                "alreadyingredient": "このアイテムはすでにこのレシピの材料です！",
+                "noJournal": "カテゴリを設定するには本を開いてください。"
+            },
             "bookcontext": {
                 "add": "レシピを追加",
-                "delete": "消去",
-                "duplicate": "複製",
                 "edit": "編集",
-                "export": "輸出",
-                "import": "輸入"
+                "delete": "削除",
+                "inspect": "確認",
+                "duplicate": "複製",
+                "export": "エクスポート",
+                "import": "インポート"
+            },
+            "editcreatebook": {
+                "title": "本の編集/作成",
+                "name": "名前",
+                "namep": "新しい本",
+                "description": "説明",
+                "image": "画像",
+                "sound": "サウンド",
+                "confirm": "確認",
+                "tools": "道具",
+                "toolsplaceholder": "カンマ区切りの道具名リスト",
+                "macro": "条件",
+                "macroplaceholder": "マクロ名またはコマンド",
+                "time": "時間",
+                "timeplaceholder": "作成時間（分）",
+                "edit": "編集",
+                "create": "作成",
+                "book": "本",
+                "recipe": "レシピ",
+                "permission": "プレイヤー権限",
+                "expression": {
+                    "label": "式",
+                    "placeholder": "式"
+                },
+                "abilityDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "toolCheck": {
+                    "label": "道具判定",
+                    "placeholder": "道具判定"
+                },
+                "toolDc": {
+                    "label": "DC",
+                    "placeholder": "DC"
+                },
+                "abilityCheck": {
+                    "label": "システム特性",
+                    "placeholder": "システム特性"
+                },
+                "modifierList": {
+                    "add": "修正値を追加",
+                    "hint": "ロール結果または式が返す値のいずれかがDC以上（高い方の値を使用）の場合、収集アイテム数は修正式に従って変更されます。修正値の先頭に演算子を含めることができます。指定がない場合はデフォルトでプラス（+）が使用されます。例えば *1d4 は収集アイテム数を1d4倍します。",
+                    "label": "修正値"
+                }
             },
             "configbookrecipe": {
                 "permissions": {
-                    "allow": "許可する",
                     "default": "デフォルト",
+                    "allow": "許可",
                     "deny": "拒否"
                 }
             },
-            "craft": "クラフト - Ctrl を押したままにすると、すばやくクラフトできます",
-            "craftError": "クラフトエラー",
-            "craftFailConsumed": "クラフト失敗！\n条件が満たされず、食材が消費されました。",
-            "craftFailNotConsumed": "クラフト失敗！\n条件が満たされず、食材が消費されませんでした。",
-            "craftSuccess": "クラフト成功！\nインベントリに追加:",
-            "craftSuccessTimed": "クラフト成功！\nクラフトが完了すると、次のアイテムが追加されます。",
-            "editcreatebook": {
-                "book": "本",
-                "confirm": "確認",
-                "create": "作成",
-                "description": "説明",
-                "edit": "編集",
-                "image": "画像",
-                "macro": "状態",
-                "macroplaceholder": "マクロ名またはコマンド",
-                "name": "名前",
-                "namep": "新しい本",
-                "permission": "プレイヤーの許可",
-                "recipe": "レシピ",
-                "sound": "音",
-                "time": "時間",
-                "timeplaceholder": "クラフト時間（分）",
-                "title": "ブックの編集/作成",
-                "tools": "ツール",
-                "toolsplaceholder": "ツール名のカンマ区切りリスト"
-            },
-            "errors": {
-                "alreadyingredient": "このアイテムはすでにこのレシピの材料に含まれています!",
-                "namemissing": "お名前欄必須！"
-            },
-            "ingredientsTooltip": "左クリックで材料を調べ、右クリックで材料を選択",
-            "minutes": "分",
-            "noTools": "ツールがありません！\n次のいずれかが必要です。",
             "recipeconfig": {
+                "inheritTools": "道具を継承",
+                "ingredientsInspection": "材料の確認",
+                "productInspection": "成果物の確認",
                 "ingredients": "材料",
-                "ingredientsInspection": "成分検査",
-                "inheritTools": "ツールを継承",
-                "productInspection": "製品検査",
                 "result": "結果"
             },
-            "relinked": "1 つまたは複数のアイテムが参照されておらず、再リンクされました。",
-            "resultTooltip": "アイテムをクリックして結果を調べるか、コンテナをクリックして作成結果として選択します",
-            "searchRecipe": "レシピ検索",
-            "time": "製作時間",
-            "timedCraftCompleted": "クラフト完成！\nインベントリに追加:",
-            "title": "マスタークラフト",
-            "tools": "必要なツール",
-            "filter": "すべて/クラフト可能に切り替え",
-            "cauldron": "大釜"
+            "title": "CAO-Crafting",
+            "recipeBooks": "レシピブック",
+            "addRecipeBook": "レシピブックを追加",
+            "filter": "全て/作成可能を切替",
+            "relinked": "1つ以上のアイテムで参照が欠落していたため、再リンクされました。",
+            "craft": "作成 - Ctrlを押しながらでクイック作成",
+            "searchRecipe": "レシピを検索",
+            "tools": "必要な道具",
+            "time": "作成時間",
+            "minutes": "分",
+            "craftError": "作成エラー",
+            "craftSuccess": "作成に成功しました！インベントリに追加: ",
+            "craftSuccessTimed": "作成に成功しました！以下のアイテムは作成完了後に追加されます: ",
+            "timedCraftCompleted": "作成完了！インベントリに追加: ",
+            "craftFailConsumed": "作成に失敗しました！条件を満たさず、材料は消費されました。",
+            "craftFailNotConsumed": "作成に失敗しました！条件を満たさず、材料は消費されませんでした。",
+            "noTools": "道具が不足しています！以下のいずれかが必要です: ",
+            "noProficiency": "熟練していません: ",
+            "ingredientsTooltip": "左クリックで材料を選択、右クリックで材料を確認。",
+            "resultTooltip": "左クリックで結果ボックスを選択、右クリックでアイテムを確認。",
+            "ingredientsEditInfo": "アイテムをボックスにドラッグして作成コンポーネントとして追加します。+ボタンをクリックすると空のコンポーネントを追加できます。同じボックス内の複数のコンポーネントは互換的に使用できます。作成には各ボックスに少なくとも1つのコンポーネントが必要です。",
+            "resultEditInfo": "アイテムをボックスにドラッグして作成結果として追加します。同じボックス内の複数のアイテムはすべて作成時に付与されます。作成中に結果として選択できるボックスは1つだけです。",
+            "cauldron": "大鍋",
+            "timedCrafting": "作成の進行状況",
+            "readyIn": "完成まで: ",
+            "onlyCraftable": "作成可能のみ",
+            "all": "すべて",
+            "useCraftingActor": "作成アクターを使用",
+            "editMode": "編集",
+            "useInventory": "インベントリを使用",
+            "craftAs": "作成者として",
+            "useInventoryInfo": "このアクターのインベントリのアイテムがクラフトに使用されます。作成結果および遅延作成結果もこのアクターのインベントリに配置されます。",
+            "craftAsInfo": "このアクターがクラフトを行い、あらゆるクラフト判定（道具、特性など）はこのアクターによって行われます。",
+            "ingredient": "材料",
+            "product": "成果物",
+            "component": "コンポーネント"
         },
-        "show-recipes": "レシピを表示する",
         "cauldronApp": {
-            "brewFail": "醸造に失敗しました！\nあなたの調合物はうまく混ざりませんでした。\n材料が消費されてしまいました。",
-            "confirm": "確認する",
+            "title": "大鍋",
+            "noIngredients": "レシピを発見するには、少なくとも2つの材料を混ぜる必要があります！",
+            "brewFail": "調合に失敗しました！うまく混ざりませんでした。材料は消費されました。",
+            "hint": "材料を大鍋にドラッグ＆ドロップして混ぜ合わせます。材料をクリックすると大鍋から取り除けます。「材料を混ぜる」ボタンをクリックして材料を混ぜ合わせます。うまく混ざればレシピを発見できます。材料は消費されます。",
             "discovered": "新しいレシピを発見しました！",
-            "gmConfirm": "ゲームマスターは、この発見を使用する前に確認する必要があります。",
-            "hint": "材料を大釜にドラッグアンドドロップして混ぜます。\n材料をクリックして大釜から取り出します。 \n「材料を混ぜる」ボタンをクリックして材料を混ぜ合わせます。\n材料がうまく混ざり合えば、新しいレシピが見つかるでしょう。\n材料が消費されてしまいます。",
-            "noIngredients": "レシピを見つけるには、少なくとも 2 つの材料を混ぜる必要があります。",
+            "gmConfirm": "この発見が使用可能になるには、ゲームマスターの確認が必要です。",
+            "confirm": "確認",
             "partial": {
-                "consumed": "消費:",
-                "extra1": "とても近かったです！\nもうほとんどそれができましたね！\n少し追加しすぎたのかもしれません。",
-                "extra1missing1": "うまくいくように見えましたが、うまくいきませんでした。\nもしかしたら、何かを追加しすぎて、他のものが足りなかったのかもしれません。",
-                "extra2": "うまくいくように見えましたが、うまくいきませんでした。\nもしかしたら追加しすぎたのかもしれません。",
-                "missing1": "とても近かったです！\nもうほとんどそれができましたね！\nもう少し必要かもしれません。",
-                "missing2": "うまくいくように見えましたが、うまくいきませんでした。\nもしかしたらもっと何かが必要なのかもしれない。"
+                "consumed": "消費済み:",
+                "extra1": "惜しかった！もう少しでした！少し多く入れすぎたのかもしれません。",
+                "extra2": "うまくいきそうでしたが、失敗しました。多く入れすぎたのかもしれません。",
+                "missing1": "惜しかった！もう少しでした！もう少し必要かもしれません。",
+                "missing2": "うまくいきそうでしたが、失敗しました。何かが足りないのかもしれません。",
+                "extra1missing1": "うまくいきそうでしたが、失敗しました。何かを入れすぎて、別の何かが足りなかったのかもしれません。"
+            }
+        },
+        "itemConfig": {
+            "title": "CAO-Crafting - アイテム設定",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "属性パス"
             },
-            "title": "大釜"
+            "tags": {
+                "label": "タグ",
+                "notes": "カンマ区切りのタグリスト。クラフト時、プレイヤーはこれらのタグのいずれかを持つアイテムをインベントリに所持している必要があります。"
+            }
+        },
+        "UI": {
+            "open-recipe-app": "レシピマネージャー",
+            "delete-recipe-book-title": "レシピブックを削除",
+            "delete-recipe-book-content": "このレシピブックを削除してもよろしいですか？",
+            "delete-recipe-title": "レシピを削除",
+            "delete-recipe-content": "このレシピを削除してもよろしいですか？",
+            "default-recipe-name": "新しいレシピ",
+            "no-permission": "このレシピまたは本を開く権限がありません。"
         },
         "settings": {
             "enableCauldron": {
-                "hint": "大釜インターフェイスを有効にします。\nこれにより、プレイヤーは任意の材料を混ぜ合わせてレシピを見つけることができます。",
-                "name": "大釜を有効にする"
+                "name": "大鍋を有効化",
+                "hint": "大鍋インターフェースを有効にします。プレイヤーは材料を混ぜてレシピを発見できるようになります。"
             },
             "customQuantityPath": {
-                "hint": "品目の数量データ値へのパス (データ パスは「system」から始まります。たとえば、数量が item.system.itemquantity.value に保存されている場合は、この設定に「itemquantity.value」を挿入します)。\nデフォルトのパスを使用する場合は空白のままにし、システムが共通パスを使用しない場合にのみカスタマイズします。",
-                "name": "カスタム数量パス"
+                "name": "カスタム数量パス",
+                "hint": "アイテム数量データ値へのパス（データパスは「system」から始まります。例えば数量が item.system.itemQuantity.value に保存されている場合は「itemQuantity.value」を入力します）。デフォルトパスを使用する場合は空欄のままにしてください。システムが共通パスを使用しない場合のみカスタマイズしてください。"
+            },
+            "migrateOnStartup": {
+                "name": "起動時に設定を移行",
+                "hint": "有効にすると、起動時にジャーナルデータが移行されます。マクロ 'game.modules.get(\"cao-the-call-of-the-ancestors\").API.migration.showManualMigrationDialog()' を使用して手動で移行することもできます。"
+            },
+            "dontShowButtonOnNpc": {
+                "name": "NPCヘッダーのボタンを非表示",
+                "hint": "有効にすると、NPCシートにレシピブックを開くボタンが表示されなくなります。"
+            },
+            "mainFolderName": {
+                "name": "メインフォルダ名",
+                "hint": "フォルダ名が設定されている場合、CAO-Craftingインターフェースにはそのフォルダの内容のみが表示されます。設定されていない場合、モジュールはメインフォルダを自動検出しようとします。"
             }
         }
     }

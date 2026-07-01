@@ -1,116 +1,219 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "cao-the-call-of-the-ancestors": {
+                "cao-the-call-of-the-ancestors": "CAO-Rezept"
+            }
+        }
+    },
     "cao-the-call-of-the-ancestors": {
-        "UI": {
-            "default-recipe-name": "Neues Rezept",
-            "delete-recipe-book-content": "Möchten Sie dieses Rezeptbuch wirklich löschen?",
-            "delete-recipe-book-title": "Rezeptbuch löschen",
-            "delete-recipe-content": "Möchten Sie dieses Rezept wirklich löschen?",
-            "delete-recipe-title": "Rezept löschen",
-            "no-permission": "Sie sind nicht berechtigt, dieses Rezept oder Buch zu öffnen.",
-            "open-recipe-app": "Rezeptmanager"
-        },
-        "craft": "Basteln",
+        "cao-the-call-of-the-ancestors": "CAO-Rezept",
+        "craft": "Handwerk",
+        "show-recipes": "Rezepte anzeigen",
         "craftDialog": {
-            "cancel": "Stornieren",
+            "title": "Handwerk",
+            "craft": "Herstellen",
+            "cancel": "Abbrechen",
             "consumes": "Verbraucht",
-            "craft": "Handwerk",
-            "crafted": "Gefertigt",
-            "crafts": "Kunsthandwerk",
-            "title": "Basteln"
+            "crafts": "Erzeugt",
+            "crafted": "Hergestellt"
+        },
+        "componentEditForm": {
+            "title": "Komponenten-Konfiguration",
+            "name": {
+                "label": "Name",
+                "hint": "Name, der zum Abgleich des Gegenstands verwendet wird, der als Zutat für die Herstellung verbraucht wird."
+            },
+            "img": "Bild",
+            "quantity": "Menge",
+            "uuid": {
+                "label": "Gegenstand",
+                "hint": "Gegenstand, der beim Anklicken angezeigt wird. Das Ändern dieses Gegenstands aktualisiert nicht Namen oder Bild der Komponente."
+            },
+            "resourcePath": {
+                "title": "Ressourcen-Konfiguration",
+                "hint": "Pfad zu einer Akteurs-Ressource. Ist der Gegenstand nicht im Inventar vorhanden, verbraucht die Herstellung stattdessen die Ressource des herstellenden Akteurs.",
+                "label": "Ressourcenpfad"
+            },
+            "tags": {
+                "title": "Tags-Konfiguration",
+                "hint": "Eine Liste von Tags, die alternative Gegenstände für diese Komponente definieren. Ist der Hauptgegenstand nicht im Inventar vorhanden, verwendet die Herstellung Gegenstände, die im Modus „Einige“ mindestens einen Tag oder im Modus „Alle“ alle Tags erfüllen.",
+                "label": "Tags",
+                "mode": {
+                    "label": "Erfordern",
+                    "every": "Alle",
+                    "some": "Einige"
+                }
+            }
         },
         "recipeApp": {
-            "addRecipeBook": "Rezeptbuch hinzufügen",
+            "errors": {
+                "namemissing": "Namensfeld erforderlich!",
+                "alreadyingredient": "Dieser Gegenstand ist bereits eine Zutat dieses Rezepts!",
+                "noJournal": "Öffne ein Buch, um Kategorien zu konfigurieren."
+            },
             "bookcontext": {
                 "add": "Rezept hinzufügen",
-                "delete": "Löschen",
-                "duplicate": "Duplikat",
                 "edit": "Bearbeiten",
-                "export": "Export",
+                "delete": "Löschen",
+                "inspect": "Untersuchen",
+                "duplicate": "Duplizieren",
+                "export": "Exportieren",
                 "import": "Importieren"
+            },
+            "editcreatebook": {
+                "title": "Buch bearbeiten/erstellen",
+                "name": "Name",
+                "namep": "Neues Buch",
+                "description": "Beschreibung",
+                "image": "Bild",
+                "sound": "Klang",
+                "confirm": "Bestätigen",
+                "tools": "Werkzeug",
+                "toolsplaceholder": "Kommagetrennte Liste von Werkzeugnamen",
+                "macro": "Bedingung",
+                "macroplaceholder": "Makroname oder Befehl",
+                "time": "Zeit",
+                "timeplaceholder": "Herstellungszeit in Minuten",
+                "edit": "Bearbeiten",
+                "create": "Erstellen",
+                "book": "Buch",
+                "recipe": "Rezept",
+                "permission": "Spielerberechtigung",
+                "expression": {
+                    "label": "Ausdruck",
+                    "placeholder": "Ausdruck"
+                },
+                "abilityDc": {
+                    "label": "SG",
+                    "placeholder": "SG"
+                },
+                "toolCheck": {
+                    "label": "Werkzeugprobe",
+                    "placeholder": "Werkzeugprobe"
+                },
+                "toolDc": {
+                    "label": "SG",
+                    "placeholder": "SG"
+                },
+                "abilityCheck": {
+                    "label": "System-Fähigkeit",
+                    "placeholder": "System-Fähigkeit"
+                },
+                "modifierList": {
+                    "add": "Modifikator hinzufügen",
+                    "hint": "Wenn entweder das Wurfergebnis oder der von der Expression zurückgegebene Wert gleich oder größer als der SG ist (der höhere Wert zählt), wird die Anzahl der gesammelten Gegenstände gemäß dem Modifikator-Ausdruck angepasst. Du kannst am Anfang des Modifikators einen mathematischen Operator angeben; ist keiner angegeben, wird standardmäßig ein Plus (+) angenommen. Beispiel: *1d4 vervielfacht die Anzahl der gesammelten Gegenstände mit 1d4.",
+                    "label": "Modifikator"
+                }
             },
             "configbookrecipe": {
                 "permissions": {
-                    "allow": "Erlauben",
                     "default": "Standard",
-                    "deny": "Leugnen"
+                    "allow": "Erlauben",
+                    "deny": "Verweigern"
                 }
             },
-            "craft": "Fertigen - Halten Sie die Strg-Taste gedrückt, um schnell zu erstellen",
-            "craftError": "Bastelfehler",
-            "craftFailConsumed": "Basteln fehlgeschlagen! \nDie Bedingung war nicht erfüllt und die Zutaten wurden verbraucht.",
-            "craftFailNotConsumed": "Basteln fehlgeschlagen! \nDie Bedingung war nicht erfüllt und die Zutaten wurden nicht verbraucht.",
-            "craftSuccess": "Basteln erfolgreich! \nZum Inventar hinzugefügt:",
-            "craftSuccessTimed": "Basteln erfolgreich! \nDie folgenden Gegenstände werden hinzugefügt, sobald die Herstellung abgeschlossen ist:",
-            "editcreatebook": {
-                "book": "Buch",
-                "confirm": "Bestätigen",
-                "create": "Erstellen",
-                "description": "Beschreibung",
-                "edit": "Bearbeiten",
-                "image": "Bild",
-                "macro": "Zustand",
-                "macroplaceholder": "Makroname oder Befehl",
-                "name": "Name",
-                "namep": "Neues Buch",
-                "permission": "Spielerberechtigung",
-                "recipe": "Rezept",
-                "sound": "Klang",
-                "time": "Zeit",
-                "timeplaceholder": "Herstellungszeit in Minuten",
-                "title": "Buch bearbeiten/erstellen",
-                "tools": "Werkzeug",
-                "toolsplaceholder": "Kommagetrennte Liste von Werkzeugnamen"
-            },
-            "errors": {
-                "alreadyingredient": "Dieser Artikel ist bereits in einer Zutat dieses Rezepts enthalten!",
-                "namemissing": "Namensfeld erforderlich!"
-            },
-            "ingredientsTooltip": "Klicken Sie mit der linken Maustaste, um Zutaten zu untersuchen, klicken Sie mit der rechten Maustaste, um eine Zutat auszuwählen",
-            "minutes": "Protokoll",
-            "noTools": "Werkzeug fehlt! \nSie benötigen eines von:",
             "recipeconfig": {
-                "ingredients": "Zutaten",
-                "ingredientsInspection": "Inhaltskontrolle",
                 "inheritTools": "Werkzeuge erben",
-                "productInspection": "Produktinspektion",
+                "ingredientsInspection": "Zutaten-Einsicht",
+                "productInspection": "Produkt-Einsicht",
+                "ingredients": "Zutaten",
                 "result": "Ergebnis"
             },
-            "relinked": "Bei einem oder mehreren Artikeln fehlten Referenzen und sie wurden neu verknüpft.",
-            "resultTooltip": "Klicken Sie auf einen Gegenstand, um das Ergebnis zu überprüfen, oder klicken Sie auf seinen Behälter, um ihn als Handwerksergebnis auszuwählen",
-            "searchRecipe": "Suchrezept",
-            "time": "Zeit zum Basteln",
-            "timedCraftCompleted": "Basteln abgeschlossen! \nZum Inventar hinzugefügt:",
-            "title": "Meisterhaft",
-            "tools": "notwendige Werkzeuge",
-            "filter": "Schalte Alle/Herstellbar um",
-            "cauldron": "Kessel"
+            "title": "CAO-Crafting",
+            "recipeBooks": "Rezeptbücher",
+            "addRecipeBook": "Rezeptbuch hinzufügen",
+            "filter": "Alle/Herstellbar umschalten",
+            "relinked": "Bei einem oder mehreren Gegenständen fehlten Referenzen, sie wurden neu verknüpft.",
+            "craft": "Herstellen – Strg gedrückt halten für Schnellherstellung",
+            "searchRecipe": "Rezept suchen",
+            "tools": "Benötigtes Werkzeug",
+            "time": "Herstellungszeit",
+            "minutes": "Minuten",
+            "craftError": "Herstellungsfehler",
+            "craftSuccess": "Herstellung erfolgreich! Zum Inventar hinzugefügt: ",
+            "craftSuccessTimed": "Herstellung erfolgreich! Folgende Gegenstände werden hinzugefügt, sobald die Herstellung abgeschlossen ist: ",
+            "timedCraftCompleted": "Herstellung abgeschlossen! Zum Inventar hinzugefügt: ",
+            "craftFailConsumed": "Herstellung fehlgeschlagen! Die Bedingung wurde nicht erfüllt und die Zutaten wurden verbraucht.",
+            "craftFailNotConsumed": "Herstellung fehlgeschlagen! Die Bedingung wurde nicht erfüllt, die Zutaten wurden aber nicht verbraucht.",
+            "noTools": "Werkzeug fehlt! Du benötigst eines von: ",
+            "noProficiency": "Du bist nicht geübt in: ",
+            "ingredientsTooltip": "Linksklick um Zutaten auszuwählen, Rechtsklick um eine Zutat zu untersuchen.",
+            "resultTooltip": "Linksklick auf das Feld um das Ergebnis auszuwählen, Rechtsklick auf den Gegenstand um ihn zu untersuchen.",
+            "ingredientsEditInfo": "Ziehe einen Gegenstand auf ein Feld, um ihn als Herstellungskomponente hinzuzufügen. Klicke auf die +-Schaltfläche, um eine leere Komponente hinzuzufügen. Mehrere Komponenten im selben Feld können austauschbar verwendet werden. Mindestens eine Komponente pro Feld ist zum Herstellen erforderlich.",
+            "resultEditInfo": "Ziehe einen Gegenstand auf ein Feld, um ihn als Herstellungsergebnis hinzuzufügen. Mehrere Gegenstände im selben Feld werden bei der Herstellung alle gewährt. Beim Herstellen kann nur ein Feld als Ergebnis ausgewählt werden.",
+            "cauldron": "Kessel",
+            "timedCrafting": "Fortschritt der Herstellung",
+            "readyIn": "Fertig in: ",
+            "onlyCraftable": "Nur Herstellbares",
+            "all": "Alle",
+            "useCraftingActor": "Herstellenden Akteur verwenden",
+            "editMode": "Bearbeiten",
+            "useInventory": "Inventar verwenden",
+            "craftAs": "Herstellen als",
+            "useInventoryInfo": "Gegenstände aus dem Inventar dieses Akteurs werden für die Herstellung verwendet. Herstellungs- und verzögerte Herstellungsergebnisse werden ebenfalls in das Inventar dieses Akteurs gelegt.",
+            "craftAsInfo": "Dieser Akteur führt die Herstellung durch und alle Herstellungsproben (Werkzeug, Fähigkeiten usw.) werden von diesem Akteur abgelegt.",
+            "ingredient": "Zutat",
+            "product": "Produkt",
+            "component": "Komponente"
         },
-        "show-recipes": "Rezepte anzeigen",
         "cauldronApp": {
-            "brewFail": "Brühen fehlgeschlagen! \nIhre Mischung hat sich nicht gut vermischen lassen. \nDie Zutaten wurden verbraucht.",
-            "confirm": "Bestätigen",
+            "title": "Kessel",
+            "noIngredients": "Du musst mindestens zwei Zutaten mischen, um ein Rezept zu entdecken!",
+            "brewFail": "Brauen fehlgeschlagen! Deine Mischung hat sich nicht gut verbunden. Die Zutaten wurden verbraucht.",
+            "hint": "Ziehe Zutaten per Drag & Drop in den Kessel, um sie zu vermischen. Klicke auf eine Zutat, um sie aus dem Kessel zu entfernen. Klicke auf die Schaltfläche „Zutaten mischen“, um sie miteinander zu vermischen. Vermischen sich die Zutaten gut, entdeckst du ein neues Rezept. Die Zutaten werden verbraucht.",
             "discovered": "Du hast ein neues Rezept entdeckt!",
             "gmConfirm": "Ein Spielleiter muss diese Entdeckung bestätigen, bevor sie verwendet werden kann.",
-            "hint": "Ziehen Sie die Zutaten per Drag-and-Drop in den Kessel, um sie zu vermischen. \nKlicken Sie auf eine Zutat, um sie aus dem Kessel zu entfernen. \nKlicken Sie auf die Schaltfläche „Zutaten mischen“, um die Zutaten miteinander zu vermischen. \nWenn sich die Zutaten gut vermischen, entdecken Sie ein neues Rezept. \nDie Zutaten werden verbraucht.",
-            "noIngredients": "Um ein Rezept zu finden, müssen Sie mindestens zwei Zutaten mischen!",
+            "confirm": "Bestätigen",
             "partial": {
                 "consumed": "Verbraucht:",
-                "extra1": "Es war so nah! \nDu hattest es fast geschafft! \nVielleicht hast du etwas zu viel hinzugefügt.",
-                "extra1missing1": "Es sah so aus, als würde es funktionieren, aber das tat es nicht. \nVielleicht haben Sie von etwas zu viel und von etwas anderem zu wenig hinzugefügt.",
-                "extra2": "Es sah so aus, als würde es funktionieren, aber das tat es nicht. \nVielleicht hast du zu viel hinzugefügt.",
-                "missing1": "Es war so nah! \nDu hattest es fast geschafft! \nVielleicht braucht es noch ein bisschen mehr.",
-                "missing2": "Es sah so aus, als würde es funktionieren, aber das tat es nicht. \nVielleicht braucht es mehr von etwas."
+                "extra1": "So knapp! Fast hättest du es geschafft! Vielleicht hast du etwas zu viel hinzugefügt.",
+                "extra2": "Es sah so aus, als würde es klappen, tat es aber nicht. Vielleicht hast du zu viel hinzugefügt.",
+                "missing1": "So knapp! Fast hättest du es geschafft! Vielleicht braucht es noch etwas mehr.",
+                "missing2": "Es sah so aus, als würde es klappen, tat es aber nicht. Vielleicht fehlt noch etwas.",
+                "extra1missing1": "Es sah so aus, als würde es klappen, tat es aber nicht. Vielleicht hast du von etwas zu viel und von etwas anderem zu wenig hinzugefügt."
+            }
+        },
+        "itemConfig": {
+            "title": "CAO-Crafting - Gegenstands-Konfiguration",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Attributpfad"
             },
-            "title": "Kessel"
+            "tags": {
+                "label": "Tags",
+                "notes": "Kommagetrennte Liste von Tags. Beim Herstellen muss der Spieler Gegenstände mit mindestens einem dieser Tags im Inventar haben."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Rezeptmanager",
+            "delete-recipe-book-title": "Rezeptbuch löschen",
+            "delete-recipe-book-content": "Möchtest du dieses Rezeptbuch wirklich löschen?",
+            "delete-recipe-title": "Rezept löschen",
+            "delete-recipe-content": "Möchtest du dieses Rezept wirklich löschen?",
+            "default-recipe-name": "Neues Rezept",
+            "no-permission": "Du hast keine Berechtigung, dieses Rezept oder Buch zu öffnen."
         },
         "settings": {
             "enableCauldron": {
-                "hint": "Aktivieren Sie die Cauldron-Schnittstelle. \nAuf diese Weise können Spieler beliebige Zutaten miteinander mischen, um Rezepte zu entdecken.",
-                "name": "Aktivieren Sie Kessel"
+                "name": "Kessel aktivieren",
+                "hint": "Aktiviert die Kessel-Oberfläche. Dadurch können Spieler beliebige Zutaten mischen, um Rezepte zu entdecken."
             },
             "customQuantityPath": {
-                "hint": "Der Pfad zum Datenwert der Artikelmenge (der Datenpfad beginnt bei „system“. Wenn Ihre Menge beispielsweise in item.system.itemQuantity.value gespeichert ist, würden Sie „itemQuantity.value“ in diese Einstellung einfügen). \nLassen Sie das Feld leer, um den Standardpfad zu verwenden. Passen Sie es nur an, wenn Ihr System nicht den allgemeinen Pfad verwendet.",
-                "name": "Benutzerdefinierter Mengenpfad"
+                "name": "Benutzerdefinierter Mengenpfad",
+                "hint": "Der Pfad zum Datenwert der Gegenstandsmenge (der Datenpfad beginnt bei „system“; liegt deine Menge z. B. in item.system.itemQuantity.value, trägst du „itemQuantity.value“ ein). Leer lassen für den Standardpfad, nur anpassen, wenn dein System nicht den gängigen Pfad verwendet."
+            },
+            "migrateOnStartup": {
+                "name": "Einstellungen beim Start migrieren",
+                "hint": "Wenn aktiviert, migriert das Modul beim Start die Journal-Daten. Mit dem Makro 'game.modules.get(\"cao-the-call-of-the-ancestors\").API.migration.showManualMigrationDialog()' kannst du die Migration manuell auslösen."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Schaltfläche in NSC-Kopfzeile ausblenden",
+                "hint": "Wenn aktiviert, wird die Schaltfläche zum Öffnen des Rezeptbuchs nicht auf NSC-Bögen angezeigt."
+            },
+            "mainFolderName": {
+                "name": "Name des Hauptordners",
+                "hint": "Ist ein Ordnername festgelegt, wird nur der Inhalt dieses Ordners in der CAO-Crafting-Oberfläche angezeigt. Andernfalls versucht das Modul, den Hauptordner automatisch zu erkennen."
             }
         }
     }

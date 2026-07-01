@@ -1,6 +1,6 @@
 <div class="journal-sheet-container">
 
-    <aside class="sidebar directory flexcol journal-sidebar">
+    {{!-- <aside class="sidebar directory flexcol journal-sidebar">
 
         <header class="directory-header">
             <div class="header-search flexrow" style="position: relative;">
@@ -43,14 +43,14 @@
             </button>
             {{/unless}}
         </div>
-    </aside>
+    </aside> --}}
 
     <section class="journal-entry-content flexcol" style="overflow: scroll;">
         {{#each recipeBooks}}
             {{#each recipes}}
 
-                <div class="cao-the-call-of-the-ancestors-recipe hidden" data-book-id="{{../id}}" data-recipe-id="{{this.id}}">
-                    <header class="cao-the-call-of-the-ancestors-recipe-header">
+                <div class="mastercrafted-recipe hidden" data-book-id="{{../id}}" data-recipe-id="{{this.id}}">
+                    <header class="mastercrafted-recipe-header">
                         <div class="title" {{#unless ../../craftMode}}style="justify-content: flex-start;"{{/unless}}>
                             <img src="{{this.img}}" alt="">
                             <h1>{{this.name}}</h1>
@@ -71,36 +71,36 @@
                         {{/if}}
                     </header>
                     <h3{{#if ../../craftMode}} data-tooltip="{{localize "cao-the-call-of-the-ancestors.recipeApp.ingredientsTooltip"}}"{{/if}}>{{localize "cao-the-call-of-the-ancestors.recipeApp.recipeconfig.ingredients"}}</h3>
-                    <div class="cao-the-call-of-the-ancestors-ingredients">
+                    <div class="mastercrafted-ingredients">
                         {{#each ingredients}}
-                            <div class="cao-the-call-of-the-ancestors-ingredient" data-ingredient-id="{{this.id}}">
+                            <div class="mastercrafted-ingredient" data-ingredient-id="{{this.id}}">
                                 {{#each components}}
-                                    <div class="cao-the-call-of-the-ancestors-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}" data-tooltip="{{this.name}} (x{{this.quantity}})" style="background-image: url('{{this.img}}');">
-                                        <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="cao-the-call-of-the-ancestors-component-amount" value="{{this.quantity}}">
+                                    <div class="mastercrafted-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}" data-tooltip="{{this.name}} (x{{this.quantity}})" style="background-image: url('{{this.img}}');">
+                                        <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="mastercrafted-component-amount" value="{{this.quantity}}">
                                     </div>
                                 {{/each}}
                             </div>
                         {{/each}}
                         {{#unless ../../craftMode}}
-                        <div class="cao-the-call-of-the-ancestors-ingredient">
+                        <div class="mastercrafted-ingredient">
                             <span class="empty-ingredient">+</span>
                         </div>
                         {{/unless}}
                     </div>
                     <h3{{#if ../../craftMode}} data-tooltip="{{localize "cao-the-call-of-the-ancestors.recipeApp.resultTooltip"}}"{{/if}}>{{localize "cao-the-call-of-the-ancestors.recipeApp.recipeconfig.result"}}</h3>
-                    <div class="cao-the-call-of-the-ancestors-results">
+                    <div class="mastercrafted-results">
                         {{#each products}}
-                        <div class="cao-the-call-of-the-ancestors-result" data-result-id="{{this.id}}">
+                        <div class="mastercrafted-result" data-result-id="{{this.id}}">
                             {{#each components}}
-                            <div class="cao-the-call-of-the-ancestors-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}"
+                            <div class="mastercrafted-component component-img" data-component-id="{{this.id}}" data-uuid="{{this.uuid}}"
                                 data-tooltip="{{this.name}}" style="background-image: url('{{this.img}}');">
-                                <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="cao-the-call-of-the-ancestors-component-amount" value="{{this.quantity}}">
+                                <input type="number" name="quantity" {{#if ../../../../craftMode}}disabled="true"{{/if}} class="mastercrafted-component-amount" value="{{this.quantity}}">
                             </div>
                             {{/each}}
                         </div>
                         {{/each}}
                         {{#unless ../../craftMode}}
-                        <div class="cao-the-call-of-the-ancestors-result">
+                        <div class="mastercrafted-result">
                             <span class="empty-result">+</span>
                         </div>
                         {{/unless}}

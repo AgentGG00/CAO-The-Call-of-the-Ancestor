@@ -1,116 +1,219 @@
 {
+    "TYPES": {
+        "JournalEntryPage": {
+            "cao-the-call-of-the-ancestors": {
+                "cao-the-call-of-the-ancestors": "Receta CAO"
+            }
+        }
+    },
     "cao-the-call-of-the-ancestors": {
-        "UI": {
-            "default-recipe-name": "Nueva receta",
-            "delete-recipe-book-content": "¿Seguro que quieres eliminar este libro de recetas?",
-            "delete-recipe-book-title": "Eliminar libro de recetas",
-            "delete-recipe-content": "¿Seguro que quieres eliminar esta receta?",
-            "delete-recipe-title": "Eliminar Receta",
-            "no-permission": "No tienes permiso para abrir esta receta o libro.",
-            "open-recipe-app": "Administrador de recetas"
-        },
-        "craft": "elaboración",
+        "cao-the-call-of-the-ancestors": "Receta CAO",
+        "craft": "Fabricación",
+        "show-recipes": "Mostrar recetas",
         "craftDialog": {
+            "title": "Fabricación",
+            "craft": "Fabricar",
             "cancel": "Cancelar",
-            "consumes": "consume",
-            "craft": "Artesanía",
-            "crafted": "hecho a mano",
-            "crafts": "Artesanía",
-            "title": "elaboración"
+            "consumes": "Consume",
+            "crafts": "Produce",
+            "crafted": "Fabricado"
+        },
+        "componentEditForm": {
+            "title": "Configuración del componente",
+            "name": {
+                "label": "Nombre",
+                "hint": "Nombre utilizado para identificar el objeto que se consumirá como componente en la fabricación."
+            },
+            "img": "Imagen",
+            "quantity": "Cantidad",
+            "uuid": {
+                "label": "Objeto",
+                "hint": "Objeto que se mostrará al hacer clic. Cambiar este objeto no actualizará el nombre ni la imagen del componente."
+            },
+            "resourcePath": {
+                "title": "Configuración de recurso",
+                "hint": "Ruta a un recurso del actor. Si el objeto no está en el inventario, la fabricación agotará el recurso del actor en lugar del objeto.",
+                "label": "Ruta del recurso"
+            },
+            "tags": {
+                "title": "Configuración de etiquetas",
+                "hint": "Lista de etiquetas que definen objetos alternativos para este componente. Si el objeto principal no está en el inventario, la fabricación usará objetos que coincidan con al menos una etiqueta en modo Algunas o con todas en modo Todas.",
+                "label": "Etiquetas",
+                "mode": {
+                    "label": "Requerir",
+                    "every": "Todas",
+                    "some": "Algunas"
+                }
+            }
         },
         "recipeApp": {
-            "addRecipeBook": "Agregar libro de recetas",
+            "errors": {
+                "namemissing": "¡El campo Nombre es obligatorio!",
+                "alreadyingredient": "¡Este objeto ya es un ingrediente de esta receta!",
+                "noJournal": "Abre un libro para configurar las categorías."
+            },
             "bookcontext": {
-                "add": "Agregar Receta",
-                "delete": "Borrar",
-                "duplicate": "Duplicar",
+                "add": "Añadir receta",
                 "edit": "Editar",
+                "delete": "Eliminar",
+                "inspect": "Inspeccionar",
+                "duplicate": "Duplicar",
                 "export": "Exportar",
                 "import": "Importar"
             },
+            "editcreatebook": {
+                "title": "Editar/Crear libro",
+                "name": "Nombre",
+                "namep": "Nuevo libro",
+                "description": "Descripción",
+                "image": "Imagen",
+                "sound": "Sonido",
+                "confirm": "Confirmar",
+                "tools": "Herramientas",
+                "toolsplaceholder": "Lista de nombres de herramientas separados por comas",
+                "macro": "Condición",
+                "macroplaceholder": "Nombre de macro o comando",
+                "time": "Tiempo",
+                "timeplaceholder": "Tiempo de fabricación en minutos",
+                "edit": "Editar",
+                "create": "Crear",
+                "book": "Libro",
+                "recipe": "Receta",
+                "permission": "Permiso del jugador",
+                "expression": {
+                    "label": "Expresión",
+                    "placeholder": "Expresión"
+                },
+                "abilityDc": {
+                    "label": "CD",
+                    "placeholder": "CD"
+                },
+                "toolCheck": {
+                    "label": "Prueba de herramienta",
+                    "placeholder": "Prueba de herramienta"
+                },
+                "toolDc": {
+                    "label": "CD",
+                    "placeholder": "CD"
+                },
+                "abilityCheck": {
+                    "label": "Habilidad del sistema",
+                    "placeholder": "Habilidad del sistema"
+                },
+                "modifierList": {
+                    "add": "Añadir modificador",
+                    "hint": "Si el resultado de la tirada o el valor devuelto por la expresión es igual o mayor que la CD (se usa el valor más alto), la cantidad de objetos obtenidos se modifica según la expresión del modificador. Puedes incluir un operador matemático al inicio del modificador; si no se indica ninguno, se asume un signo más (+) por defecto. Por ejemplo, *1d4 multiplica la cantidad de objetos obtenidos por 1d4.",
+                    "label": "Modificador"
+                }
+            },
             "configbookrecipe": {
                 "permissions": {
+                    "default": "Predeterminado",
                     "allow": "Permitir",
-                    "default": "Por defecto",
                     "deny": "Denegar"
                 }
             },
-            "craft": "Craft: mantenga presionada la tecla Ctrl para crear rápidamente",
-            "craftError": "error de elaboración",
-            "craftFailConsumed": "¡Elaboración fallida! \nLa condición no se cumplió y los ingredientes se consumieron.",
-            "craftFailNotConsumed": "¡Elaboración fallida! \nLa condición no se cumplió y los ingredientes no se consumieron.",
-            "craftSuccess": "¡Elaboración exitosa! \nAñadido al inventario:",
-            "craftSuccessTimed": "¡Elaboración exitosa! \nLos siguientes elementos se agregarán una vez que se complete la elaboración:",
-            "editcreatebook": {
-                "book": "Libro",
-                "confirm": "Confirmar",
-                "create": "Crear",
-                "description": "Descripción",
-                "edit": "Editar",
-                "image": "Imagen",
-                "macro": "Condición",
-                "macroplaceholder": "Nombre de macro o comando",
-                "name": "Nombre",
-                "namep": "Nuevo libro",
-                "permission": "Permiso del jugador",
-                "recipe": "Receta",
-                "sound": "Sonido",
-                "time": "Tiempo",
-                "timeplaceholder": "Tiempo de elaboración en minutos",
-                "title": "Editar/Crear Libro",
-                "tools": "Herramientas",
-                "toolsplaceholder": "Lista de nombres de herramientas separados por comas"
-            },
-            "errors": {
-                "alreadyingredient": "¡Este artículo ya está en un ingrediente de esta receta!",
-                "namemissing": "¡Campo de nombre requerido!"
-            },
-            "ingredientsTooltip": "Haga clic con el botón izquierdo para inspeccionar los ingredientes, haga clic con el botón derecho para seleccionar un ingrediente",
-            "minutes": "minutos",
-            "noTools": "¡Faltan herramientas! \nNecesitas uno de:",
             "recipeconfig": {
-                "ingredients": "Ingredientes",
-                "ingredientsInspection": "Inspección de ingredientes",
                 "inheritTools": "Heredar herramientas",
-                "productInspection": "Inspección de productos",
+                "ingredientsInspection": "Inspección de ingredientes",
+                "productInspection": "Inspección del producto",
+                "ingredients": "Ingredientes",
                 "result": "Resultado"
             },
-            "relinked": "A uno o más elementos les faltaban referencias y se han vuelto a vincular.",
-            "resultTooltip": "Haga clic en un elemento para inspeccionar el resultado o haga clic en su contenedor para seleccionarlo como resultado de elaboración.",
-            "searchRecipe": "Buscar Receta",
-            "time": "Tiempo de elaboración",
-            "timedCraftCompleted": "¡Elaboración completada! \nAñadido al inventario:",
-            "title": "magistral",
+            "title": "CAO-Crafting",
+            "recipeBooks": "Libros de recetas",
+            "addRecipeBook": "Añadir libro de recetas",
+            "filter": "Alternar Todo/Fabricable",
+            "relinked": "A uno o más objetos les faltaban referencias y se han vuelto a vincular.",
+            "craft": "Fabricar - Mantén Ctrl para fabricación rápida",
+            "searchRecipe": "Buscar receta",
             "tools": "Herramientas necesarias",
-            "filter": "Alternar todo/creable",
-            "cauldron": "Caldera"
+            "time": "Tiempo de fabricación",
+            "minutes": "minutos",
+            "craftError": "Error de fabricación",
+            "craftSuccess": "¡Fabricación exitosa! Añadido al inventario: ",
+            "craftSuccessTimed": "¡Fabricación exitosa! Los siguientes objetos se añadirán al completarse la fabricación: ",
+            "timedCraftCompleted": "¡Fabricación completada! Añadido al inventario: ",
+            "craftFailConsumed": "¡Fabricación fallida! No se cumplió la condición y los ingredientes se consumieron.",
+            "craftFailNotConsumed": "¡Fabricación fallida! No se cumplió la condición y los ingredientes no se consumieron.",
+            "noTools": "¡Faltan herramientas! Necesitas una de: ",
+            "noProficiency": "No eres competente con: ",
+            "ingredientsTooltip": "Clic izquierdo para seleccionar ingredientes, clic derecho para inspeccionar un ingrediente.",
+            "resultTooltip": "Clic izquierdo en la casilla para seleccionar el resultado, clic derecho en el objeto para inspeccionarlo.",
+            "ingredientsEditInfo": "Arrastra un objeto a una casilla para añadirlo como componente de fabricación. Haz clic en el botón + para añadir un componente vacío. Varios componentes en la misma casilla pueden usarse indistintamente. Se requiere al menos un componente por casilla para fabricar.",
+            "resultEditInfo": "Arrastra un objeto a una casilla para añadirlo como resultado de fabricación. Varios objetos en la misma casilla se otorgarán todos en la fabricación. Solo se puede seleccionar una casilla como resultado durante la fabricación.",
+            "cauldron": "Caldero",
+            "timedCrafting": "Progreso de fabricación",
+            "readyIn": "Listo en: ",
+            "onlyCraftable": "Solo fabricable",
+            "all": "Todo",
+            "useCraftingActor": "Usar actor fabricante",
+            "editMode": "Editar",
+            "useInventory": "Usar inventario",
+            "craftAs": "Fabricar como",
+            "useInventoryInfo": "Se usarán los objetos del inventario de este actor para la fabricación. Los resultados de fabricación y fabricación retardada también se colocarán en el inventario de este actor.",
+            "craftAsInfo": "Este actor realizará la fabricación y todas las comprobaciones de fabricación (herramientas, habilidades, etc.) se harán con este actor.",
+            "ingredient": "Ingrediente",
+            "product": "Producto",
+            "component": "Componente"
         },
-        "show-recipes": "Mostrar Recetas",
         "cauldronApp": {
-            "brewFail": "¡La elaboración de cerveza falló! \nTu brebaje no se mezcló bien. \nLos ingredientes fueron consumidos.",
-            "confirm": "Confirmar",
+            "title": "Caldero",
+            "noIngredients": "¡Debes mezclar al menos dos ingredientes para descubrir una receta!",
+            "brewFail": "¡Fallo en la mezcla! Tu brebaje no se mezcló bien. Los ingredientes se consumieron.",
+            "hint": "Arrastra y suelta ingredientes en el caldero para mezclarlos. Haz clic en un ingrediente para quitarlo del caldero. Haz clic en el botón «Mezclar ingredientes» para mezclarlos. Si la mezcla funciona bien, descubrirás una nueva receta. Los ingredientes se consumirán.",
             "discovered": "¡Has descubierto una nueva receta!",
-            "gmConfirm": "Un Game Master deberá confirmar este descubrimiento antes de poder utilizarlo.",
-            "hint": "Arrastre y suelte los ingredientes en el caldero para mezclarlos. \nHaga clic en un ingrediente para sacarlo del caldero. \nHaga clic en el botón \"Mezclar ingredientes\" para mezclar los ingredientes. \nSi los ingredientes se mezclan bien, descubrirás una nueva receta. \nLos ingredientes se consumirán.",
-            "noIngredients": "¡Necesitas mezclar al menos dos ingredientes para descubrir una receta!",
+            "gmConfirm": "Un Director de Juego deberá confirmar este descubrimiento antes de poder usarlo.",
+            "confirm": "Confirmar",
             "partial": {
-                "consumed": "Consumado:",
-                "extra1": "¡Estaba tan cerca! \n¡Casi lo tienes! \nQuizás agregaste demasiado.",
-                "extra1missing1": "Parecía que iba a funcionar, pero no fue así. \nTal vez agregaste demasiado de algo y poco de otra cosa.",
-                "extra2": "Parecía que iba a funcionar, pero no fue así. \nQuizás agregaste demasiado.",
-                "missing1": "¡Estaba tan cerca! \n¡Casi lo tienes! \nQuizás necesite un poquito más.",
-                "missing2": "Parecía que iba a funcionar, pero no fue así. \nQuizás necesite más de algo."
+                "consumed": "Consumido:",
+                "extra1": "¡Estuvo muy cerca! ¡Casi lo lograste! Tal vez añadiste un poco de más.",
+                "extra2": "Parecía que iba a funcionar, pero no fue así. Tal vez añadiste demasiado.",
+                "missing1": "¡Estuvo muy cerca! ¡Casi lo lograste! Tal vez necesite un poco más.",
+                "missing2": "Parecía que iba a funcionar, pero no fue así. Tal vez falte algo más.",
+                "extra1missing1": "Parecía que iba a funcionar, pero no fue así. Tal vez añadiste demasiado de algo y no suficiente de otra cosa."
+            }
+        },
+        "itemConfig": {
+            "title": "CAO-Crafting - Configuración del objeto",
+            "sheetButton": "",
+            "attributePath": {
+                "label": "Ruta del atributo"
             },
-            "title": "Caldera"
+            "tags": {
+                "label": "Etiquetas",
+                "notes": "Lista de etiquetas separadas por comas. Al fabricar, el jugador debe tener objetos con al menos una de estas etiquetas en su inventario."
+            }
+        },
+        "UI": {
+            "open-recipe-app": "Gestor de recetas",
+            "delete-recipe-book-title": "Eliminar libro de recetas",
+            "delete-recipe-book-content": "¿Seguro que quieres eliminar este libro de recetas?",
+            "delete-recipe-title": "Eliminar receta",
+            "delete-recipe-content": "¿Seguro que quieres eliminar esta receta?",
+            "default-recipe-name": "Nueva receta",
+            "no-permission": "No tienes permiso para abrir esta receta o libro."
         },
         "settings": {
             "enableCauldron": {
-                "hint": "Habilite la interfaz de Cauldron. \nEsto permitirá a los jugadores mezclar cualquier ingrediente para descubrir recetas.",
-                "name": "Habilitar caldero"
+                "name": "Activar caldero",
+                "hint": "Activa la interfaz del caldero. Permitirá a los jugadores mezclar ingredientes para descubrir recetas."
             },
             "customQuantityPath": {
-                "hint": "La ruta al valor de los datos de la cantidad del artículo (la ruta de los datos comienza desde 'sistema'; por ejemplo, si su cantidad está almacenada en item.system.itemQuantity.value, insertaría 'itemQuantity.value' en esta configuración). \nDéjelo en blanco para usar la ruta predeterminada, personalícelo solo si su sistema no usa la ruta común.",
-                "name": "Ruta de cantidad personalizada"
+                "name": "Ruta de cantidad personalizada",
+                "hint": "La ruta al valor de cantidad del objeto (la ruta de datos comienza en 'system'; por ejemplo, si tu cantidad está en item.system.itemQuantity.value, insertarías 'itemQuantity.value'). Déjalo en blanco para usar la ruta predeterminada, personalízalo solo si tu sistema no usa la ruta común."
+            },
+            "migrateOnStartup": {
+                "name": "Migrar ajustes al iniciar",
+                "hint": "Si está activado, el módulo migrará los datos del diario al iniciar. Puedes usar la macro 'game.modules.get(\"cao-the-call-of-the-ancestors\").API.migration.showManualMigrationDialog()' para migrar manualmente tus ajustes."
+            },
+            "dontShowButtonOnNpc": {
+                "name": "Ocultar botón en cabecera de PNJ",
+                "hint": "Si está activado, el botón para abrir el libro de recetas no se mostrará en las fichas de PNJ."
+            },
+            "mainFolderName": {
+                "name": "Nombre de la carpeta principal",
+                "hint": "Si se establece un nombre de carpeta, solo se mostrará el contenido de dicha carpeta en la interfaz de CAO-Crafting. De lo contrario, el módulo intentará detectar automáticamente la carpeta principal."
             }
         }
     }
