@@ -1,0 +1,10 @@
+name: Version Bump
+on:
+  push:
+    branches: [dev]
+jobs:
+  bump:
+    permissions:
+      contents: write
+    uses: AgentGG00/workflows/.github/workflows/foundry-version-bump.yml@main
+    secrets: inherit

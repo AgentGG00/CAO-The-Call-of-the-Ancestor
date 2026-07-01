@@ -1,0 +1,10 @@
+name: Review
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  review:
+    permissions:
+      contents: read
+    uses: AgentGG00/workflows/.github/workflows/foundry-review.yml@main
+    secrets: inherit

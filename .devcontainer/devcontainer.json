@@ -1,0 +1,13 @@
+{
+  "name": "foundry-module-dev",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g @foundryvtt/foundryvtt-cli"
+}
