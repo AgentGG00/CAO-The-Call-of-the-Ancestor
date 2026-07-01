@@ -39,7 +39,7 @@ export class MastercraftedMigration {
         const backupData = JSON.stringify(game.settings.get(MODULE_ID, "recipeBooks"));
         foundry.utils.saveDataToFile(backupData, "text", "mastercrafted-backup.json");
 
-        const warning = ui.notifications.warn("Mastercrafted - Migrating all journal pages, do not refresh the page!", { permanent: true });
+        const warning = ui.notifications.warn("CAO-Crafting - Migrating all journal pages, do not refresh the page!", { permanent: true });
 
         const bookNotification = ui.notifications.notify(`Migrating books`, "info", { progress: true });
         const recipeNotification = ui.notifications.notify(`Migrating recipes`, "info", { progress: true });
@@ -47,7 +47,7 @@ export class MastercraftedMigration {
         const books = game.settings.get(MODULE_ID, "recipeBooks");
         const journalFolders = game.folders.filter(folder => folder.type === "JournalEntry");
         const mastercraftedFolder = journalFolders.find(folder => folder?.flags?.mastercrafted?.mainMastercraftedFolder)?.id ?? await Folder.create({
-            name: "Mastercrafted",
+            name: "CAO-Crafting",
             sorting: "a",
             type: "JournalEntry",
             flags: { mastercrafted: { mainMastercraftedFolder: true } },
@@ -115,7 +115,7 @@ export class MastercraftedMigration {
         bookNotification.update({pct: 1, message: `Converted ${migratedBooks} books`});
         recipeNotification.update({pct: 1, message: `Converted ${migratedRecipes} recipes`});
         ui.notifications.remove(warning);
-        ui.notifications.success("Mastercrafted migration complete!", { permanent: true });
+        ui.notifications.success("CAO-Crafting migration complete!", { permanent: true });
     }
 
     async migrateRecipe(recipe) {
@@ -176,8 +176,8 @@ export class MastercraftedMigration {
 
     showManualMigrationDialog() {
         new foundry.applications.api.DialogV2({
-            window: { title: "Mastercrafted - Migration" },
-            content: `<p>Use this dialog to migrate your journal pages to the new structure. This is required for Mastercrafted to function properly.</p>
+            window: { title: "CAO-Crafting - Migration" },
+            content: `<p>Use this dialog to migrate your journal pages to the new structure. This is required for CAO-Crafting to function properly.</p>
             <p><b>WARNING:</b> This will modify your journal data. Please back up your world before proceeding.</p>`,
             buttons: [
                 {

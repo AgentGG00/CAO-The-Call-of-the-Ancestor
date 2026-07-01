@@ -38,7 +38,7 @@ Hooks.once('init', async () => {
 
     foundry.applications.apps.DocumentSheetConfig.registerSheet(JournalEntryPage, MODULE_ID, MastercraftedRecipeSheet, {
         types: ["cao-the-call-of-the-ancestors.mastercrafted"],
-        label: "Mastercrafted Sheet",
+        label: "CAO-Crafting Sheet",
     });
 
     const module = game.modules.get(MODULE_ID);
