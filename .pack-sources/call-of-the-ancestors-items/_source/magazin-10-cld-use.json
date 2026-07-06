@@ -1,7 +1,7 @@
 {
   "_id": "mag_10_cld_use",
   "name": "Magazin 10 (CLD) – Use",
-  "type": "loot",
+  "type": "equipment",
   "folder": "F_MAG_USE",
   "system": {
     "description": {
@@ -27,8 +27,11 @@
   },
   "effects": [],
   "flags": {
-    "cao-use-magazin": true,
-    "cao-cold": true
+    "cao": {
+      "use-magazin": true,
+      "damageType": "cold",
+      "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_empty"
+    }
   },
   "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_cld.png"
 }

@@ -10,49 +10,54 @@
       "chat": ""
     },
     "quantity": 1,
-    "weight": {
-      "value": 0,
-      "units": "lb"
-    },
-    "price": {
-      "value": 0,
-      "denomination": "cp"
-    },
+    "weight": { "value": 0, "units": "lb" },
+    "price": { "value": 0, "denomination": "cp" },
     "equipped": false,
     "identified": true,
-    "type": {
-      "value": "martialM"
-    },
-    "weaponType": "martialM",
-    "baseItem": "",
-    "properties": [
-      "amm"
-    ],
-    "range": {
-      "value": 80,
-      "long": 320,
-      "units": "ft"
-    },
-    "activation": {
-      "type": "action",
-      "cost": 1,
-      "condition": ""
-    },
-    "actionType": "rwak",
-    "ability": "dex",
+    "type": { "value": "martialM" },
+    "properties": ["amm"],
+    "range": { "value": 80, "long": 320, "units": "ft" },
     "damage": {
-      "parts": [
-        [
-          "1d10 + @mod",
-          "piercing"
-        ]
-      ],
-      "versatile": ""
+      "base": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": ["piercing"],
+        "custom": { "enabled": false }
+      }
+    },
+    "activities": {
+      "caoAttack00000001": {
+        "_id": "caoAttack00000001",
+        "type": "attack",
+        "name": "",
+        "img": "",
+        "sort": 0,
+        "activation": { "type": "action", "value": 1, "condition": "" },
+        "consumption": { "targets": [], "scaling": { "allowed": false } },
+        "description": { "chatFlavor": "" },
+        "duration": { "units": "inst" },
+        "effects": [],
+        "range": { "value": 80, "long": 320, "units": "ft" },
+        "target": { "template": {}, "affects": { "count": "1" } },
+        "uses": {},
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {},
+          "flat": false,
+          "type": { "value": "ranged", "classification": "weapon" }
+        },
+        "damage": {
+          "critical": {},
+          "includeBase": true,
+          "parts": []
+        }
+      }
     }
   },
   "effects": [],
   "flags": {
-    "cao-weapon": true,
     "cao": {
       "weapon": true
     }

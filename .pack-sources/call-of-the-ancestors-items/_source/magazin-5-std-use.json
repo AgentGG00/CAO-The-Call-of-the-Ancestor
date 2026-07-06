@@ -1,7 +1,7 @@
 {
   "_id": "mag_5_std_use",
   "name": "Magazin 5 (STD) – Use",
-  "type": "loot",
+  "type": "equipment",
   "folder": "F_MAG_USE",
   "system": {
     "description": {
@@ -27,8 +27,11 @@
   },
   "effects": [],
   "flags": {
-    "cao-use-magazin": true,
-    "cao-piercing": true
+    "cao": {
+      "use-magazin": true,
+      "damageType": "piercing",
+      "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_empty"
+    }
   },
   "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin.png"
 }
