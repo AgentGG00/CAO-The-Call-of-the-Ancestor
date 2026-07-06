@@ -14,6 +14,7 @@
  *                      flags.cao.ff = { casterUuid, itemUuid }
  */
 
+console.log("CAO weapon main.js loaded");
 const CAO_NS = "cao-the-call-of-the-ancestors";
 
 /* -------------------------------------------- */
