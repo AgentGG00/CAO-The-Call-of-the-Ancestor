@@ -3,7 +3,7 @@
   "name": "Hunter’s Mark (CAO)",
   "type": "spell",
   "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
-  "folder": "F_SPELLS_CAO",
+  "folder": "knvBJeVJDGTJJr9i",
   "system": {
     "description": {
       "value": "<p>CAO: Cast requires exactly one target. The module starts concentration, consumes a spell slot, and marks the target with a token flag. While concentrated, you can move the mark to a new target as a bonus action.</p>",

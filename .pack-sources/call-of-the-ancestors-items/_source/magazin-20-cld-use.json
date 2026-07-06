@@ -2,7 +2,7 @@
   "_id": "mag_20_cld_use",
   "name": "Magazin 20 (CLD) – Use",
   "type": "equipment",
-  "folder": "F_MAG_20",
+  "folder": "2JaY1on4vb9vzb81",
   "system": {
     "description": {
       "value": "<p>A 20-round magazine (CLD).</p>",
@@ -27,7 +27,7 @@
   },
   "effects": [],
   "flags": {
-    "cao": {
+    "cao-the-call-of-the-ancestors": {
       "use-magazin": true,
       "damageType": "cold",
       "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_empty"

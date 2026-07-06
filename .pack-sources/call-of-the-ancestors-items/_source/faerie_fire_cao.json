@@ -3,7 +3,7 @@
   "name": "Faerie Fire (CAO)",
   "type": "spell",
   "img": "icons/magic/fire/projectile-meteor-salvo-strong-teal.webp",
-  "folder": "F_SPELLS_CAO",
+  "folder": "knvBJeVJDGTJJr9i",
   "system": {
     "description": {
       "value": "<p>CAO: Cast requires exactly one target. The module prompts a Dexterity save against your spell save DC. On a failed save, the target is marked and concentration begins. When concentration ends, the mark is removed. No spell slots or uses are consumed.</p>",

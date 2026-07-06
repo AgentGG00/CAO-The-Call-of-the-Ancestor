@@ -2,7 +2,7 @@
   "_id": "mag_20_lgt_use",
   "name": "Magazin 20 (LGT) – Use",
   "type": "equipment",
-  "folder": "F_MAG_20",
+  "folder": "2JaY1on4vb9vzb81",
   "system": {
     "description": {
       "value": "<p>A 20-round magazine (LGT).</p>",
@@ -27,7 +27,7 @@
   },
   "effects": [],
   "flags": {
-    "cao": {
+    "cao-the-call-of-the-ancestors": {
       "use-magazin": true,
       "damageType": "lightning",
       "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_empty"

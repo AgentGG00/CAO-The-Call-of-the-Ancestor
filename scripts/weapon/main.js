@@ -14,7 +14,7 @@
  *                      flags.cao.ff = { casterUuid, itemUuid }
  */
 
-const CAO_NS = "cao";
+const CAO_NS = "cao-the-call-of-the-ancestors";
 
 /* -------------------------------------------- */
 /* Helpers                                       */

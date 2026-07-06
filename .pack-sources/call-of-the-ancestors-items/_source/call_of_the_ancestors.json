@@ -4,7 +4,7 @@
   "name": "The Call of the Ancestors",
   "type": "weapon",
   "img": "modules/cao-the-call-of-the-ancestors/assets/icons/weapon/Ruf_der_Ahnen.png",
-  "folder": "F_WEAPON",
+  "folder": "knvBJeVJDGTJJr9i",
   "system": {
     "description": {
       "value": "<p>A weapon bound to ancestral echoes. Its true power is unlocked by the CAO module.</p>",
@@ -47,8 +47,8 @@
       }
     },
     "activities": {
-      "caoAttack00000001": {
-        "_id": "caoAttack00000001",
+      "cao0attack0000001": {
+        "_id": "cao0attack0000001",
         "type": "attack",
         "name": "Attack",
         "img": "",
@@ -99,8 +99,8 @@
           "parts": []
         }
       },
-      "caoDamage00000001": {
-        "_id": "caoDamage00000001",
+      "cao0damage0000001": {
+        "_id": "cao0damage0000001",
         "type": "damage",
         "name": "Damage",
         "img": "",
@@ -145,7 +145,7 @@
   },
   "effects": [],
   "flags": {
-    "cao": {
+    "cao-the-call-of-the-ancestors": {
       "weapon": true
     }
   }
