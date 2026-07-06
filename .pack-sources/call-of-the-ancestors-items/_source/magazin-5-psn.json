@@ -1,7 +1,7 @@
 {
   "_id": "mag_5_psn",
   "name": "Magazin 5 (PSN)",
-  "type": "loot",
+  "type": "consumable",
   "folder": "0mftN7pnkADsdmuq",
   "system": {
     "description": {
@@ -22,9 +22,11 @@
       "cao0load0000001": {
         "_id": "cao0load0000001",
         "name": "Laden",
+        "img": "",
         "type": "utility",
         "activation": {
           "type": "action",
+          "value": 1,
           "override": false
         },
         "consumption": {
@@ -34,22 +36,49 @@
           "spellSlot": false,
           "targets": []
         },
+        "description": {
+          "chatFlavor": ""
+        },
         "duration": {
           "units": "inst",
           "concentration": false,
           "override": false
         },
         "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
         "uses": {
           "spent": 0,
-          "recovery": []
+          "recovery": [],
+          "max": ""
         },
         "flags": {
-          "cao-action": "mag-load",
-          "cao-use-item-id": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_psn_use"
+          "cao-the-call-of-the-ancestors": {
+            "action": "mag-load",
+            "useItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_psn_use"
+          }
         },
         "sort": 0
       }
+    },
+    "type": {
+      "value": "ammo"
     }
   },
   "effects": [],

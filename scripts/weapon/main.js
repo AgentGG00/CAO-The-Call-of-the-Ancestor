@@ -11,6 +11,8 @@ console.log("CAO weapon main.js loaded");
  *   Use-Magazin-Item: flags["cao-the-call-of-the-ancestors"]["use-magazin"] = true
  *                      flags["cao-the-call-of-the-ancestors"].damageType = "piercing" | "cold" | "lightning" | "poison"
  *                      flags["cao-the-call-of-the-ancestors"].emptyItemId = "<Compendium-UUID der leeren Hülle>"
+ *   Basis-Magazin (Laden-Activity): flags["cao-the-call-of-the-ancestors"].action = "mag-load"
+ *                      flags["cao-the-call-of-the-ancestors"].useItemId = "<Compendium-UUID des Use-Magazins>"
  *   Target (von HM/FF-Activities gesetzt, hier nur gelesen):
  *                      flags["cao-the-call-of-the-ancestors"].hm = { casterUuid, itemUuid }
  *                      flags["cao-the-call-of-the-ancestors"].ff = { casterUuid, itemUuid }
@@ -135,9 +137,16 @@ async function caoHandleMagLoad(activity) {
   console.log("CAO: === mag-load Activity gefeuert ===", "baseItem =", baseItem?.name);
   if (!actor) return;
 
-  const useItemId = activity.flags?.["cao-use-item-id"];
+  const useItemId = activity.flags?.[CAO_NS]?.useItemId;
   if (!useItemId) {
-    console.log("CAO: mag-load ohne cao-use-item-id Flag, abbruch");
+    console.log("CAO: mag-load ohne useItemId Flag, abbruch");
+    return;
+  }
+
+  const existingUseItem = actor.items.find(i => i.getFlag(CAO_NS, "sourceUseItemId") === useItemId);
+  if (existingUseItem) {
+    console.log("CAO: Use-Item existiert bereits, keine Aktion, nur Meldung");
+    ui.notifications.warn("Du hast solch ein Magazin schon in der Waffe!");
     return;
   }
 
@@ -156,19 +165,16 @@ async function caoHandleMagLoad(activity) {
     await baseItem.update({ "system.quantity": baseQty - 1 });
   }
 
-  let useItem = actor.items.find(i => i.getFlag(CAO_NS, "sourceUseItemId") === useItemId);
-  if (!useItem) {
-    const source = await fromUuid(useItemId).catch(() => null);
-    if (!source) {
-      console.log("CAO: Use-Item-Quelle nicht gefunden:", useItemId);
-      return;
-    }
-    const data = source.toObject();
-    delete data._id;
-    foundry.utils.setProperty(data, `flags.${CAO_NS}.sourceUseItemId`, useItemId);
-    const created = await actor.createEmbeddedDocuments("Item", [data]);
-    useItem = created[0];
+  const source = await fromUuid(useItemId).catch(() => null);
+  if (!source) {
+    console.log("CAO: Use-Item-Quelle nicht gefunden:", useItemId);
+    return;
   }
+  const data = source.toObject();
+  delete data._id;
+  foundry.utils.setProperty(data, `flags.${CAO_NS}.sourceUseItemId`, useItemId);
+  const created = await actor.createEmbeddedDocuments("Item", [data]);
+  const useItem = created[0];
   await useItem.update({ "system.equipped": true });
 
   const whisperIds = game.users.filter(u => u.isGM).map(u => u.id);
@@ -196,10 +202,17 @@ const CAO_WEAPON_PENDING = new Map(); // userId -> { magId, magType, targetToken
 Hooks.on("dnd5e.preUseActivity", (activity, usageConfig, dialogConfig, messageConfig) => {
   const item = activity?.item;
   console.log("CAO: === dnd5e.preUseActivity gefeuert ===", "item =", item?.name, "activity.type =", activity?.type);
+  console.log("CAO: activity.flags =", JSON.stringify(activity?.flags));
 
-  if (activity?.flags?.["cao-action"] === "mag-load") {
-    console.log("CAO: mag-load erkannt, delegiere an caoHandleMagLoad");
-    caoHandleMagLoad(activity);
+  if (activity?.flags?.[CAO_NS]?.action === "mag-load") {
+    console.log("CAO: mag-load erkannt, zeige Bestätigung");
+    Dialog.confirm({
+      title: "Waffe laden",
+      content: `<p>Möchtest du ${item.name} wirklich laden?</p>`,
+      yes: () => caoHandleMagLoad(activity),
+      no: () => console.log("CAO: mag-load vom Spieler abgebrochen"),
+      defaultYes: true
+    });
     return false;
   }
 
