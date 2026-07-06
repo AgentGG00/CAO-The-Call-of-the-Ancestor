@@ -17,7 +17,40 @@
       "value": 0,
       "denomination": "cp"
     },
-    "identified": true
+    "identified": true,
+    "activities": {
+      "cao0load0000001": {
+        "_id": "cao0load0000001",
+        "name": "Laden",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "flags": {
+          "cao-action": "mag-load",
+          "cao-use-item-id": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_cld_use"
+        },
+        "sort": 0
+      }
+    }
   },
   "effects": [],
   "flags": {},

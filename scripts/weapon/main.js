@@ -126,6 +126,68 @@ async function caoConsumeShot(mag, actor) {
 }
 
 /* -------------------------------------------- */
+/* Magazin-Laden (Basis -> Use, mit Tausch)      */
+/* -------------------------------------------- */
+
+async function caoHandleMagLoad(activity) {
+  const baseItem = activity.item;
+  const actor = baseItem?.actor;
+  console.log("CAO: === mag-load Activity gefeuert ===", "baseItem =", baseItem?.name);
+  if (!actor) return;
+
+  const useItemId = activity.flags?.["cao-use-item-id"];
+  if (!useItemId) {
+    console.log("CAO: mag-load ohne cao-use-item-id Flag, abbruch");
+    return;
+  }
+
+  const currentlyEquipped = actor.items.find(i => caoIsUseMag(i) && !!i.system?.equipped);
+  let previousName = null;
+  if (currentlyEquipped) {
+    previousName = currentlyEquipped.name;
+    console.log("CAO: rüste vorheriges Magazin ab:", previousName);
+    await currentlyEquipped.update({ "system.equipped": false });
+  }
+
+  const baseQty = baseItem.system?.quantity ?? 1;
+  if (baseQty <= 1) {
+    await baseItem.delete();
+  } else {
+    await baseItem.update({ "system.quantity": baseQty - 1 });
+  }
+
+  let useItem = actor.items.find(i => i.getFlag(CAO_NS, "sourceUseItemId") === useItemId);
+  if (!useItem) {
+    const source = await fromUuid(useItemId).catch(() => null);
+    if (!source) {
+      console.log("CAO: Use-Item-Quelle nicht gefunden:", useItemId);
+      return;
+    }
+    const data = source.toObject();
+    delete data._id;
+    foundry.utils.setProperty(data, `flags.${CAO_NS}.sourceUseItemId`, useItemId);
+    const created = await actor.createEmbeddedDocuments("Item", [data]);
+    useItem = created[0];
+  }
+  await useItem.update({ "system.equipped": true });
+
+  const whisperIds = game.users.filter(u => u.isGM).map(u => u.id);
+  if (!whisperIds.includes(game.user.id)) whisperIds.push(game.user.id);
+
+  const content = previousName
+    ? `Du hast ${previousName} mit ${useItem.name} getauscht!`
+    : `Du hast ${useItem.name} ausgerüstet!`;
+
+  await ChatMessage.create({
+    content,
+    speaker: ChatMessage.getSpeaker({ actor }),
+    whisper: whisperIds
+  });
+
+  console.log("CAO: mag-load abgeschlossen:", content);
+}
+
+/* -------------------------------------------- */
 /* Vorbereitung / Checks vor der Aktivierung     */
 /* -------------------------------------------- */
 
@@ -134,6 +196,12 @@ const CAO_WEAPON_PENDING = new Map(); // userId -> { magId, magType, targetToken
 Hooks.on("dnd5e.preUseActivity", (activity, usageConfig, dialogConfig, messageConfig) => {
   const item = activity?.item;
   console.log("CAO: === dnd5e.preUseActivity gefeuert ===", "item =", item?.name, "activity.type =", activity?.type);
+
+  if (activity?.flags?.["cao-action"] === "mag-load") {
+    console.log("CAO: mag-load erkannt, delegiere an caoHandleMagLoad");
+    caoHandleMagLoad(activity);
+    return false;
+  }
 
   if (!caoIsCaoWeapon(item)) {
     console.log("CAO: kein CAO-Waffen-Item, breche Prüfung ab (kein return false)");
