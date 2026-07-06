@@ -2,7 +2,7 @@
   "_id": "mag_20_lgt",
   "name": "Magazin 20 (LGT)",
   "type": "loot",
-  "folder": "F_MAG_BASE",
+  "folder": "F_MAG_20",
   "system": {
     "description": {
       "value": "<p>A 20-round magazine (LGT).</p>",
@@ -21,5 +21,6 @@
   },
   "effects": [],
   "flags": {},
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_lgt.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_lgt.png",
+  "_key": "!items!mag_20_lgt"
 }

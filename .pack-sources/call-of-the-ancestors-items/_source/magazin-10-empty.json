@@ -2,7 +2,7 @@
   "_id": "mag_10_empty",
   "name": "Magazin 10 (Empty)",
   "type": "loot",
-  "folder": "F_MAG_EMPTY",
+  "folder": "F_MAG_10",
   "system": {
     "description": {
       "value": "<p>An empty 10-round magazine.</p>",
@@ -23,5 +23,6 @@
   "flags": {
     "cao-empty-magazin": true
   },
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_empty.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_empty.png",
+  "_key": "!items!mag_10_empty"
 }

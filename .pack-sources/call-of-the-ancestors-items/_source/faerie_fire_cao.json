@@ -11,34 +11,98 @@
     },
     "level": 1,
     "school": "evo",
-    "properties": ["vocal", "concentration"],
-    "materials": { "value": "", "consumed": false, "cost": 0, "supply": 0 },
-    "target": {
-      "template": { "contiguous": false, "units": "ft" },
-      "affects": { "count": "1", "type": "creature", "choice": false, "special": "" }
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
     },
-    "range": { "value": "60", "units": "ft" },
-    "activation": { "type": "action", "value": 1, "condition": "" },
-    "duration": { "value": "1", "units": "minute" },
-    "uses": { "max": "", "recovery": [], "spent": 0 },
+    "target": {
+      "template": {
+        "contiguous": false,
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft"
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
     "activities": {
       "dnd5eactivity000": {
         "_id": "dnd5eactivity000",
         "name": "Cast (CAO)",
         "type": "save",
-        "activation": { "type": "action", "override": false },
-        "save": { "ability": ["dex"], "dc": { "calculation": "spellcasting" } },
-        "damage": { "onSave": "none", "parts": [] },
-        "target": {
-          "prompt": true,
-          "template": { "contiguous": false, "units": "ft" },
-          "affects": { "count": "1", "type": "creature", "choice": false, "special": "" },
+        "activation": {
+          "type": "action",
           "override": false
         },
-        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
-        "duration": { "units": "inst", "concentration": false, "override": false },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
         "effects": [],
-        "uses": { "spent": 0, "recovery": [] },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
         "flags": {
           "cao-action": "ff-cast",
           "cao-token-flag": "cao-ff-token"
@@ -54,5 +118,6 @@
   "flags": {
     "cao-spell": true,
     "cao-faerie-fire": true
-  }
+  },
+  "_key": "!items!faerie_fire_cao"
 }

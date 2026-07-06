@@ -2,7 +2,7 @@
   "_id": "mag_20_std_use",
   "name": "Magazin 20 (STD) – Use",
   "type": "equipment",
-  "folder": "F_MAG_USE",
+  "folder": "F_MAG_20",
   "system": {
     "description": {
       "value": "<p>A 20-round magazine (STD).</p>",
@@ -33,5 +33,6 @@
       "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_empty"
     }
   },
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+  "_key": "!items!mag_20_std_use"
 }

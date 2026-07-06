@@ -1,0 +1,9 @@
+{
+  "_id": "F_WEAPON",
+  "_key": "!folders!F_WEAPON",
+  "name": "Weapon",
+  "type": "Item",
+  "sorting": "a",
+  "color": null,
+  "flags": {}
+}

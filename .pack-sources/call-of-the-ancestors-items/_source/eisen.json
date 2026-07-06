@@ -2,7 +2,7 @@
   "_id": "eisen",
   "name": "Eisen",
   "type": "loot",
-  "folder": "F_MATERIALS",
+  "folder": "F_RESSOURCEN",
   "system": {
     "description": {
       "value": "<p>Crafting material.</p>",
@@ -21,5 +21,6 @@
   },
   "effects": [],
   "flags": {},
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/eisen.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/eisen.png",
+  "_key": "!items!eisen"
 }

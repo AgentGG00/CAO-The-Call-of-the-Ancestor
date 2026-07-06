@@ -2,7 +2,7 @@
   "_id": "mag_20_std",
   "name": "Magazin 20 (STD)",
   "type": "loot",
-  "folder": "F_MAG_BASE",
+  "folder": "F_MAG_20",
   "system": {
     "description": {
       "value": "<p>A 20-round magazine (STD).</p>",
@@ -21,5 +21,6 @@
   },
   "effects": [],
   "flags": {},
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+  "_key": "!items!mag_20_std"
 }

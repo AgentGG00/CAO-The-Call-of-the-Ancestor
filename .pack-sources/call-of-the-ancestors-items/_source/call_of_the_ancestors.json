@@ -1,53 +1,140 @@
 {
   "_id": "call_of_the_ancestors",
+  "_key": "!items!call_of_the_ancestors",
   "name": "The Call of the Ancestors",
   "type": "weapon",
   "img": "modules/cao-the-call-of-the-ancestors/assets/icons/weapon/Ruf_der_Ahnen.png",
-  "folder": "F_WEAPONS",
+  "folder": "F_WEAPON",
   "system": {
     "description": {
       "value": "<p>A weapon bound to ancestral echoes. Its true power is unlocked by the CAO module.</p>",
       "chat": ""
     },
     "quantity": 1,
-    "weight": { "value": 0, "units": "lb" },
-    "price": { "value": 0, "denomination": "cp" },
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
     "equipped": false,
     "identified": true,
-    "type": { "value": "martialM" },
-    "properties": ["amm"],
-    "range": { "value": 80, "long": 320, "units": "ft" },
+    "type": {
+      "value": "martialM"
+    },
+    "properties": [
+      "amm"
+    ],
+    "ability": "dex",
+    "range": {
+      "value": 80,
+      "long": 320,
+      "units": "ft"
+    },
     "damage": {
       "base": {
         "number": 1,
         "denomination": 10,
         "bonus": "",
-        "types": ["piercing"],
-        "custom": { "enabled": false }
+        "types": [
+          "piercing"
+        ],
+        "custom": {
+          "enabled": false
+        }
       }
     },
     "activities": {
       "caoAttack00000001": {
         "_id": "caoAttack00000001",
         "type": "attack",
-        "name": "",
+        "name": "Attack",
         "img": "",
         "sort": 0,
-        "activation": { "type": "action", "value": 1, "condition": "" },
-        "consumption": { "targets": [], "scaling": { "allowed": false } },
-        "description": { "chatFlavor": "" },
-        "duration": { "units": "inst" },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst"
+        },
         "effects": [],
-        "range": { "value": 80, "long": 320, "units": "ft" },
-        "target": { "template": {}, "affects": { "count": "1" } },
+        "range": {
+          "value": 80,
+          "long": 320,
+          "units": "ft"
+        },
+        "target": {
+          "template": {},
+          "affects": {
+            "count": "1"
+          }
+        },
         "uses": {},
         "attack": {
           "ability": "dex",
           "bonus": "",
           "critical": {},
           "flat": false,
-          "type": { "value": "ranged", "classification": "weapon" }
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
         },
+        "damage": {
+          "critical": {},
+          "includeBase": false,
+          "parts": []
+        }
+      },
+      "caoDamage00000001": {
+        "_id": "caoDamage00000001",
+        "type": "damage",
+        "name": "Damage",
+        "img": "",
+        "sort": 10,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst"
+        },
+        "effects": [],
+        "range": {
+          "value": 80,
+          "long": 320,
+          "units": "ft"
+        },
+        "target": {
+          "template": {},
+          "affects": {
+            "count": "1"
+          }
+        },
+        "uses": {},
         "damage": {
           "critical": {},
           "includeBase": true,

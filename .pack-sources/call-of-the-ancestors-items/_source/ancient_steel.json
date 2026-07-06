@@ -2,7 +2,7 @@
   "_id": "ancient_steel",
   "name": "Ancient steel",
   "type": "loot",
-  "folder": "F_MATERIALS",
+  "folder": "F_RESSOURCEN",
   "system": {
     "description": {
       "value": "<p>Crafting material.</p>",
@@ -21,5 +21,6 @@
   },
   "effects": [],
   "flags": {},
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/ancient_steel.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/ancient_steel.png",
+  "_key": "!items!ancient_steel"
 }

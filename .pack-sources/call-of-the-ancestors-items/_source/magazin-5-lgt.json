@@ -2,7 +2,7 @@
   "_id": "mag_5_lgt",
   "name": "Magazin 5 (LGT)",
   "type": "loot",
-  "folder": "F_MAG_BASE",
+  "folder": "F_MAG_5",
   "system": {
     "description": {
       "value": "<p>A 5-round magazine (LGT).</p>",
@@ -21,5 +21,6 @@
   },
   "effects": [],
   "flags": {},
-  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_lgt.png"
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_lgt.png",
+  "_key": "!items!mag_5_lgt"
 }
