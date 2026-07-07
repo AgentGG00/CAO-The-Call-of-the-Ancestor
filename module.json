@@ -32,7 +32,8 @@
     ]
   },
   "esmodules": [
-    "scripts/weapon/main.js"
+    "scripts/weapon/main.js",
+    "scripts/import/recipe-import.js"
   ],
   "packs": [
     {

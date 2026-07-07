@@ -1,0 +1,1285 @@
+{
+  "name": "Ahnen-Schmiede",
+  "folder": null,
+  "flags": {
+    "mastercrafted": {
+      "img": "icons/sundries/books/book-worn-brown-grey.webp",
+      "sound": "",
+      "require": "",
+      "ingredientsInspection": false,
+      "productInspection": false,
+      "macroName": "",
+      "time": null
+    },
+    "core": {
+      "locked": false
+    }
+  },
+  "pages": [
+    {
+      "name": "Sturmfunke",
+      "type": "mastercrafted.mastercrafted",
+      "text": {
+        "content": "<p>Geladen mit der rohen Energie eines Sturmkristalls verwandelt sich das Magazin in einen tödlichen Blitzableiter, jeder Schuss ein kleiner Donnerschlag</p>",
+        "format": 1
+      },
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "XrlTBGk9o6FJ7LwP",
+              "name": null,
+              "components": [
+                {
+                  "id": "BNhtiSgebL3DqVmQ",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_std",
+                  "quantity": 1,
+                  "name": "Magazin 5 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                },
+                {
+                  "id": "EoWzPisnXn1kNGQs",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std",
+                  "quantity": 1,
+                  "name": "Magazin 10 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                },
+                {
+                  "id": "9eTk4Ce2A3bgcBcj",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_std",
+                  "quantity": 1,
+                  "name": "Magazin 20 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "URrz02XMnuSmOn06",
+              "name": null,
+              "components": [
+                {
+                  "id": "XdvUdPyrK8p6UknE",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.sturmkristall",
+                  "quantity": 1,
+                  "name": "Sturmkristall",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/sturmkristall.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "1",
+          "macroName": "",
+          "products": [
+            {
+              "id": "1AKYyN720SdYhOkM",
+              "name": null,
+              "components": [
+                {
+                  "id": "VdB1aELhNz6r8MgR",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_lgt",
+                  "quantity": 1,
+                  "name": "Magazin 5 (LGT)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_lgt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "ai0OTlq6ib3nV0u9",
+              "name": null,
+              "components": [
+                {
+                  "id": "fRWTsyCPb8dqA9Yv",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_lgt",
+                  "quantity": 1,
+                  "name": "Magazin 10 (LGT)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_lgt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "e6kb7ICIxbmBi6X5",
+              "name": null,
+              "components": [
+                {
+                  "id": "SFOnf5AMaf9IhNNb",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_lgt",
+                  "quantity": 1,
+                  "name": "Magazin 20 (LGT)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_lgt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "1",
+          "sound": "",
+          "time": 240,
+          "require": "",
+          "toolDc": 7,
+          "toolCheck": "tinker",
+          "abilityCheck": "wis",
+          "abilityDc": 10,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_id": "OyOW9BnZ4VWQoHqx",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "sort": 0,
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783415412120,
+        "modifiedTime": 1783423980211,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 50000,
+      "name": "Frostkuss der Ahnen",
+      "type": "mastercrafted.mastercrafted",
+      "_id": "xMWXFdnskTTyJyji",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Ein Sturmkristall bindet sich mit dem Magazin und durchdringt jedes Geschoss mit eisiger Kälte, die den Gegner bei Aufprall erstarren lässt</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "Dy1AFleVEvvT3yHO",
+              "name": null,
+              "components": [
+                {
+                  "id": "34mYX2B5tna36r3C",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_std",
+                  "quantity": 1,
+                  "name": "Magazin 5 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                },
+                {
+                  "id": "0JYjPXT5taURm6I3",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std",
+                  "quantity": 1,
+                  "name": "Magazin 10 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                },
+                {
+                  "id": "eekuO4afJtnMYt12",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_std",
+                  "quantity": 1,
+                  "name": "Magazin 20 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "zGshrh8Dh0bbOC1g",
+              "name": null,
+              "components": [
+                {
+                  "id": "qXUxI0W6iFnTow2j",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.eiskristall",
+                  "quantity": 1,
+                  "name": "Eiskristall",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/eiskristall.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "1",
+          "macroName": "",
+          "products": [
+            {
+              "id": "NCS7M4SxQXHYz0VU",
+              "name": null,
+              "components": [
+                {
+                  "id": "zL4hBmpLBgWps7uM",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_cld",
+                  "quantity": 1,
+                  "name": "Magazin 5 (CLD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_cld.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "Mx3lSf0kfPFjjLnB",
+              "name": null,
+              "components": [
+                {
+                  "id": "1ryPxgha05NvuMrd",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_cld",
+                  "quantity": 1,
+                  "name": "Magazin 10 (CLD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_cld.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "xrFLuj4Clyk4D1TF",
+              "name": null,
+              "components": [
+                {
+                  "id": "2JC74e2rxDDuMtPX",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_cld",
+                  "quantity": 1,
+                  "name": "Magazin 20 (CLD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_cld.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "1",
+          "sound": "",
+          "time": 240,
+          "require": "",
+          "toolDc": 7,
+          "toolCheck": "tinker",
+          "abilityCheck": "wis",
+          "abilityDc": 10,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783421255898,
+        "modifiedTime": 1783423988244,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 100000,
+      "name": "Schleichendes Gift",
+      "type": "mastercrafted.mastercrafted",
+      "_id": "prhyiZ3DxDXkiXGL",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Eine Phiole Gift wird ins Magazin eingearbeitet und überzieht jedes Geschoss mit einer heimtückischen Toxin-Schicht</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "OPlA4DjygaCOQIr0",
+              "name": null,
+              "components": [
+                {
+                  "id": "3nH1KG9XNsJxGwJB",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_std",
+                  "quantity": 1,
+                  "name": "Magazin 5 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                },
+                {
+                  "id": "8dvIzHT2fO8oVwri",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std",
+                  "quantity": 1,
+                  "name": "Magazin 10 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                },
+                {
+                  "id": "3iBQVuwLlQhakl0P",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_std",
+                  "quantity": 1,
+                  "name": "Magazin 20 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "CbOld3yoDi6RevoP",
+              "name": null,
+              "components": [
+                {
+                  "id": "Gb3JtPOIDGxhzbRZ",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.bottle_of_poison",
+                  "quantity": 1,
+                  "name": "Bottle of poison",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bottle_of_poison.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "1",
+          "macroName": "",
+          "products": [
+            {
+              "id": "Xx655HtAYwdYY6n7",
+              "name": null,
+              "components": [
+                {
+                  "id": "YnMpVsi66esV9lSX",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_psn",
+                  "quantity": 1,
+                  "name": "Magazin 5 (PSN)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_psn.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "SV4g3d8DAUo3ICwl",
+              "name": null,
+              "components": [
+                {
+                  "id": "pT2v4fcr0nJ5qvk2",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_psn",
+                  "quantity": 1,
+                  "name": "Magazin 10 (PSN)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_psn.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "tsRlSmPcTSZmXU6Q",
+              "name": null,
+              "components": [
+                {
+                  "id": "jWmtED29QVICRTBM",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_psn",
+                  "quantity": 1,
+                  "name": "Magazin 20 (PSN)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_psn.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "1",
+          "sound": "",
+          "time": 240,
+          "require": "",
+          "toolDc": 7,
+          "toolCheck": "tinker",
+          "abilityCheck": "wis",
+          "abilityDc": 10,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783421309577,
+        "modifiedTime": 1783423995603,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 200000,
+      "name": "Magazin auffüllen 5er",
+      "type": "mastercrafted.mastercrafted",
+      "_id": "gEd7MSAMB2IUILyE",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Eine leere Hülle wird mit fünf Bolzen neu bestückt und ist wieder einsatzbereit – schneller und günstiger als eine komplette Neuanfertigung</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "zucm2Y87WnNo57eG",
+              "name": null,
+              "components": [
+                {
+                  "id": "0phEdlzG4CFHZJXV",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_empty",
+                  "quantity": 1,
+                  "name": "Magazin 5 (Empty)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_empty.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "DkutEnS9N8GeJyRz",
+              "name": null,
+              "components": [
+                {
+                  "id": "R1ZNM7aGWLhpzwTh",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.bolt",
+                  "quantity": 5,
+                  "name": "Bolt",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bolt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "every"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "0",
+          "macroName": "",
+          "products": [
+            {
+              "id": "nIdA7Vi1EGu5RMwj",
+              "name": null,
+              "components": [
+                {
+                  "id": "bKScFd9xuxPaCAhw",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_std",
+                  "quantity": 1,
+                  "name": "Magazin 5 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "0",
+          "sound": "",
+          "time": 180,
+          "require": "",
+          "toolDc": 5,
+          "toolCheck": "tinker",
+          "abilityCheck": "str",
+          "abilityDc": 8,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783422630398,
+        "modifiedTime": 1783423951263,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 200000,
+      "name": "Magazin auffüllen 10er",
+      "type": "mastercrafted.mastercrafted",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Eine leere Hülle wird mit zehn Bolzen neu bestückt und ist wieder einsatzbereit – schneller und günstiger als eine komplette Neuanfertigung</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "BslQAzSSy7FyskOl",
+              "name": null,
+              "components": [
+                {
+                  "id": "BsmG2EKImlVZwgiE",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_empty",
+                  "quantity": 1,
+                  "name": "Magazin 10 (Empty)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_empty.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "PVaYbBff1mWdVNjB",
+              "name": null,
+              "components": [
+                {
+                  "id": "FTDdSKJwyvI72w9s",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.bolt",
+                  "quantity": 10,
+                  "name": "Bolt",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bolt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "every"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "0",
+          "macroName": "",
+          "products": [
+            {
+              "id": "22P3skQj18K0qQsj",
+              "name": null,
+              "components": [
+                {
+                  "id": "u19U0Otx7rMeMclx",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std",
+                  "quantity": 1,
+                  "name": "Magazin 10 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "0",
+          "sound": "",
+          "time": 200,
+          "require": "",
+          "toolDc": 5,
+          "toolCheck": "tinker",
+          "abilityCheck": "str",
+          "abilityDc": 8,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783422724734,
+        "modifiedTime": 1783423959518,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": "JournalEntry.FKeIwcZJfVmJe6UM.JournalEntryPage.gEd7MSAMB2IUILyE",
+        "exportSource": null
+      },
+      "_id": "4cGhvqbudBErzeIE",
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 200000,
+      "name": "Magazin auffüllen 20er",
+      "type": "mastercrafted.mastercrafted",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Eine leere Hülle wird mit zwanzig Bolzen neu bestückt und ist wieder einsatzbereit – schneller und günstiger als eine komplette Neuanfertigung</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "5LZZXn4Aj1OIHnT8",
+              "name": null,
+              "components": [
+                {
+                  "id": "viquEDZKHM1BWIFC",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_empty",
+                  "quantity": 1,
+                  "name": "Magazin 20 (Empty)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_empty.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "wSXTDWlax7yphwjb",
+              "name": null,
+              "components": [
+                {
+                  "id": "QZO6q3U1GFq4RrGv",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.bolt",
+                  "quantity": 20,
+                  "name": "Bolt",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bolt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "every"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "0",
+          "macroName": "",
+          "products": [
+            {
+              "id": "XltGwBIgWcZmoZZF",
+              "name": null,
+              "components": [
+                {
+                  "id": "C6cEouZd9Ub5CDvy",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_std",
+                  "quantity": 1,
+                  "name": "Magazin 20 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "0",
+          "sound": "",
+          "time": 240,
+          "require": "",
+          "toolDc": 5,
+          "toolCheck": "tinker",
+          "abilityCheck": "str",
+          "abilityDc": 8,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783422726294,
+        "modifiedTime": 1783423966234,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": "JournalEntry.FKeIwcZJfVmJe6UM.JournalEntryPage.gEd7MSAMB2IUILyE",
+        "exportSource": null
+      },
+      "_id": "W7k4F0jdGuP9c1NZ",
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 300000,
+      "name": "Magzin Upgrade 5 -> 10",
+      "type": "mastercrafted.mastercrafted",
+      "_id": "VeCdXlA4ExVxrZBv",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Das Magazingehäuse wird aufgeschmolzen und mit gehärtetem Ahnenstahl neu verstärkt, um fünf zusätzliche Bolzen fassen zu können</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "AwiNQTWudB1dWGCv",
+              "name": null,
+              "components": [
+                {
+                  "id": "dDmKbmUG38dfdWWx",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_std",
+                  "quantity": 1,
+                  "name": "Magazin 5 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "cvWvPFhNuXL7S3lk",
+              "name": null,
+              "components": [
+                {
+                  "id": "Es0fenbt3JZqaJjs",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.bolt",
+                  "quantity": 5,
+                  "name": "Bolt",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bolt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "every"
+                }
+              ]
+            },
+            {
+              "id": "lXlcJrhZDPrwWk6v",
+              "name": null,
+              "components": [
+                {
+                  "id": "3QpYSe51y5KiylW7",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.eisen",
+                  "quantity": 3,
+                  "name": "Eisen",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/eisen.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "every"
+                }
+              ]
+            },
+            {
+              "id": "MpklqVNMRNJjVr7x",
+              "name": null,
+              "components": [
+                {
+                  "id": "RIrFKbIGR7mPaPbH",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.ancient_steel",
+                  "quantity": 2,
+                  "name": "Ancient steel",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/ancient_steel.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "j7g2nEHpc8g6Q0p0",
+              "name": null,
+              "components": [
+                {
+                  "id": "YFZQMV8xo3eT9WZh",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.stone_coal",
+                  "quantity": 1,
+                  "name": "Stone coal",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/stone_coal.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "1",
+          "macroName": "",
+          "products": [
+            {
+              "id": "Qz6eNz5TqVbIwnxb",
+              "name": null,
+              "components": [
+                {
+                  "id": "sPPhNaAaklFnzzn6",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std",
+                  "quantity": 1,
+                  "name": "Magazin 10 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "1",
+          "sound": "",
+          "time": 480,
+          "require": "",
+          "toolDc": 10,
+          "toolCheck": "smith",
+          "abilityCheck": "str",
+          "abilityDc": 15,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783422926775,
+        "modifiedTime": 1783424155311,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null
+      },
+      "ownership": {
+        "default": -1
+      }
+    },
+    {
+      "sort": 300000,
+      "name": "Magzin Upgrade 10 -> 20",
+      "type": "mastercrafted.mastercrafted",
+      "system": {
+        "text": {
+          "format": 1
+        }
+      },
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Eine grundlegende Neuschmiedung des Gehäuses verdoppelt die Kapazität nochmals – deutlich aufwendiger als das erste Upgrade</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "category": null,
+      "flags": {
+        "mastercrafted": {
+          "recipeBook": {
+            "id": "FKeIwcZJfVmJe6UM",
+            "name": "Ahnen-Schmiede",
+            "ownership": {
+              "default": 0,
+              "i1xAeBSboJPHo03l": 3
+            },
+            "img": "icons/sundries/books/book-worn-brown-grey.webp",
+            "sound": "",
+            "require": "",
+            "ingredientsInspection": false,
+            "productInspection": false,
+            "macroName": "",
+            "time": null
+          },
+          "img": "icons/sundries/documents/document-bound-white-tan.webp",
+          "ingredients": [
+            {
+              "id": "RIQeUMhxOx7qJcGD",
+              "name": null,
+              "components": [
+                {
+                  "id": "7TlMRLGoeG1KZMai",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std",
+                  "quantity": 1,
+                  "name": "Magazin 10 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "pX2Fg9utiH1nRiVr",
+              "name": null,
+              "components": [
+                {
+                  "id": "kpXjB1WLxqvyt2kS",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.bolt",
+                  "quantity": 10,
+                  "name": "Bolt",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/bolt.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "FTu4buN3LK5oABrk",
+              "name": null,
+              "components": [
+                {
+                  "id": "aoqcO6yWd7YmrN4d",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.eisen",
+                  "quantity": 6,
+                  "name": "Eisen",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/eisen.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "bI1zeGbxHAExJjTe",
+              "name": null,
+              "components": [
+                {
+                  "id": "9Ph7wjcBcJ2ZdbcA",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.ancient_steel",
+                  "quantity": 4,
+                  "name": "Ancient steel",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/ancient_steel.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            },
+            {
+              "id": "aLGWiYsqe7Z9whVo",
+              "name": null,
+              "components": [
+                {
+                  "id": "iCk4m38NbnBCSvsN",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.stone_coal",
+                  "quantity": 2,
+                  "name": "Stone coal",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/stone_coal.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "ingredientsInspection": "1",
+          "macroName": "",
+          "products": [
+            {
+              "id": "KGYsdXm0Vo5Zb7xo",
+              "name": null,
+              "components": [
+                {
+                  "id": "K2b0irTueAcrbuK8",
+                  "uuid": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_std",
+                  "quantity": 1,
+                  "name": "Magazin 20 (STD)",
+                  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin.png",
+                  "tags": [],
+                  "resourcePath": "",
+                  "mode": "some"
+                }
+              ]
+            }
+          ],
+          "productInspection": "1",
+          "sound": "",
+          "time": 720,
+          "require": "",
+          "toolDc": 15,
+          "toolCheck": "smith",
+          "abilityCheck": "str",
+          "abilityDc": 20,
+          "expression": "",
+          "modifierList": []
+        }
+      },
+      "_stats": {
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1783424041443,
+        "modifiedTime": 1783424234588,
+        "lastModifiedBy": "i1xAeBSboJPHo03l",
+        "compendiumSource": null,
+        "duplicateSource": "JournalEntry.FKeIwcZJfVmJe6UM.JournalEntryPage.VeCdXlA4ExVxrZBv",
+        "exportSource": null
+      },
+      "_id": "E63tbu4v9p7fFAQa",
+      "ownership": {
+        "default": -1
+      }
+    }
+  ],
+  "categories": [],
+  "_stats": {
+    "coreVersion": "14.364",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "createdTime": 1783415412074,
+    "modifiedTime": 1783421359538,
+    "lastModifiedBy": "i1xAeBSboJPHo03l",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "dev",
+      "uuid": "JournalEntry.FKeIwcZJfVmJe6UM",
+      "coreVersion": "14.364",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3"
+    }
+  },
+  "ownership": {
+    "default": 0
+  }
+}
