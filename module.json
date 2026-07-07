@@ -33,7 +33,9 @@
   },
   "esmodules": [
     "scripts/weapon/main.js",
-    "scripts/import/recipe-import.js"
+    "scripts/import/recipe-import.js",
+    "scripts/spells/token-rings.js",
+    "scripts/spells/spell-marks.js"
   ],
   "packs": [
     {

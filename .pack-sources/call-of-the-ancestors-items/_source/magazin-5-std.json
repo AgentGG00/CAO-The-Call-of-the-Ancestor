@@ -1,7 +1,7 @@
 {
   "_id": "mag_5_std",
   "name": "Magazin 5 (STD)",
-  "type": "consumable",
+  "type": "loot",
   "folder": "0mftN7pnkADsdmuq",
   "system": {
     "description": {
@@ -76,9 +76,6 @@
         },
         "sort": 0
       }
-    },
-    "type": {
-      "value": "ammo"
     }
   },
   "effects": [],
