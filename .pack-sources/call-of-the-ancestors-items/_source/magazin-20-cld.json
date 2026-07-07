@@ -1,0 +1,85 @@
+{
+  "_id": "mag_20_cld",
+  "name": "Magazin 20 (CLD)",
+  "type": "loot",
+  "folder": "2JaY1on4vb9vzb81",
+  "system": {
+    "description": {
+      "value": "<p>A 20-round magazine (CLD).</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "identified": true,
+    "activities": {
+      "cao0load0000001": {
+        "_id": "cao0load0000001",
+        "name": "Laden",
+        "img": "",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "flags": {
+          "cao-the-call-of-the-ancestors": {
+            "action": "mag-load",
+            "useItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_cld_use"
+          }
+        },
+        "sort": 0
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_cld.png",
+  "_key": "!items!mag_20_cld"
+}

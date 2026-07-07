@@ -1,0 +1,28 @@
+{
+  "_id": "mag_20_empty",
+  "name": "Magazin 20 (Empty)",
+  "type": "loot",
+  "folder": "2JaY1on4vb9vzb81",
+  "system": {
+    "description": {
+      "value": "<p>An empty 20-round magazine.</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "identified": true
+  },
+  "effects": [],
+  "flags": {
+    "cao-empty-magazin": true
+  },
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_empty.png",
+  "_key": "!items!mag_20_empty"
+}

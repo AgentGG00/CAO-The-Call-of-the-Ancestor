@@ -1,0 +1,26 @@
+{
+  "_id": "stone_coal",
+  "name": "Stone coal",
+  "type": "loot",
+  "folder": "wpZveIpTq2BU5UgF",
+  "system": {
+    "description": {
+      "value": "<p>Crafting material.</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "cp"
+    },
+    "identified": true
+  },
+  "effects": [],
+  "flags": {},
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/ressourcen/stone_coal.png",
+  "_key": "!items!stone_coal"
+}

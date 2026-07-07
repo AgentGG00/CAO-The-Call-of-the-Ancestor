@@ -1,0 +1,38 @@
+{
+  "_id": "mag_5_lgt_use",
+  "name": "Magazin 5 (LGT) – Use",
+  "type": "equipment",
+  "folder": "0mftN7pnkADsdmuq",
+  "system": {
+    "description": {
+      "value": "<p>A 5-round magazine (LGT).</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "identified": true,
+    "uses": {
+      "max": "5",
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "effects": [],
+  "flags": {
+    "cao-the-call-of-the-ancestors": {
+      "use-magazin": true,
+      "damageType": "lightning",
+      "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_5_empty"
+    }
+  },
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/5er-magazin/RdA_Magazin_lgt.png",
+  "_key": "!items!mag_5_lgt_use"
+}

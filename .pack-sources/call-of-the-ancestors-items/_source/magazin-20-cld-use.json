@@ -1,0 +1,38 @@
+{
+  "_id": "mag_20_cld_use",
+  "name": "Magazin 20 (CLD) – Use",
+  "type": "equipment",
+  "folder": "2JaY1on4vb9vzb81",
+  "system": {
+    "description": {
+      "value": "<p>A 20-round magazine (CLD).</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "identified": true,
+    "uses": {
+      "max": "20",
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "effects": [],
+  "flags": {
+    "cao-the-call-of-the-ancestors": {
+      "use-magazin": true,
+      "damageType": "cold",
+      "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_20_empty"
+    }
+  },
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/20er-magazin/RdA_20er_Magazin_cld.png",
+  "_key": "!items!mag_20_cld_use"
+}

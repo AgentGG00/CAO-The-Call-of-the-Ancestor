@@ -1,0 +1,38 @@
+{
+  "_id": "mag_10_lgt_use",
+  "name": "Magazin 10 (LGT) – Use",
+  "type": "equipment",
+  "folder": "Z6PAzZ4JYUD1I6vI",
+  "system": {
+    "description": {
+      "value": "<p>A 10-round magazine (LGT).</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "identified": true,
+    "uses": {
+      "max": "10",
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true
+    }
+  },
+  "effects": [],
+  "flags": {
+    "cao-the-call-of-the-ancestors": {
+      "use-magazin": true,
+      "damageType": "lightning",
+      "emptyItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_empty"
+    }
+  },
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin_lgt.png",
+  "_key": "!items!mag_10_lgt_use"
+}

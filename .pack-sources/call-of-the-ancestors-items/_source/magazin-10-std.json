@@ -1,0 +1,85 @@
+{
+  "_id": "mag_10_std",
+  "name": "Magazin 10 (STD)",
+  "type": "loot",
+  "folder": "Z6PAzZ4JYUD1I6vI",
+  "system": {
+    "description": {
+      "value": "<p>A 10-round magazine (STD).</p>",
+      "chat": ""
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "cp"
+    },
+    "identified": true,
+    "activities": {
+      "cao0load0000001": {
+        "_id": "cao0load0000001",
+        "name": "Laden",
+        "img": "",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "flags": {
+          "cao-the-call-of-the-ancestors": {
+            "action": "mag-load",
+            "useItemId": "Compendium.cao-the-call-of-the-ancestors.call-of-the-ancestors-items.Item.mag_10_std_use"
+          }
+        },
+        "sort": 0
+      }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "img": "modules/cao-the-call-of-the-ancestors/assets/icons/10er-magazin/RdA_10er_Magazin.png",
+  "_key": "!items!mag_10_std"
+}

@@ -1,0 +1,84 @@
+{
+  "_id": "hunters_mark_cao",
+  "name": "Hunter’s Mark (CAO)",
+  "type": "spell",
+  "img": "icons/weapons/bows/shortbow-recurve-yellow.webp",
+  "folder": "knvBJeVJDGTJJr9i",
+  "system": {
+    "description": {
+      "value": "<p>CAO: Cast requires exactly one target. The module starts concentration, consumes a spell slot, and marks the target with a token flag. While concentrated, you can move the mark to a new target as a bonus action.</p>",
+      "chat": ""
+    },
+    "level": 1,
+    "school": "div",
+    "properties": ["vocal", "concentration"],
+    "materials": { "value": "", "consumed": false, "cost": 0, "supply": 0 },
+    "target": {
+      "template": { "contiguous": false, "units": "ft" },
+      "affects": { "count": "1", "type": "creature", "choice": false, "special": "" }
+    },
+    "range": { "value": "90", "units": "ft" },
+    "activation": { "type": "special", "value": 1, "condition": "" },
+    "duration": { "value": "1", "units": "hour" },
+    "uses": { "max": "", "recovery": [], "spent": 0 },
+    "activities": {
+      "dnd5eactivity001": {
+        "_id": "dnd5eactivity001",
+        "name": "Mark Creature (CAO)",
+        "type": "utility",
+        "activation": { "type": "action", "override": false },
+        "target": {
+          "prompt": true,
+          "template": { "contiguous": false, "units": "ft" },
+          "affects": { "count": "1", "type": "creature", "choice": false, "special": "" },
+          "override": false
+        },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": true, "targets": [] },
+        "duration": { "units": "hour", "value": "1", "concentration": true, "override": true },
+        "effects": [],
+        "uses": { "spent": 0, "recovery": [] },
+        "flags": {
+          "cao-the-call-of-the-ancestors": {
+            "action": "hm-cast",
+            "tokenFlag": "hm"
+          }
+        },
+        "sort": 10
+      },
+      "dnd5eactivity002": {
+        "_id": "dnd5eactivity002",
+        "name": "Move Mark (CAO)",
+        "type": "utility",
+        "activation": { "type": "bonus", "override": false },
+        "target": {
+          "prompt": true,
+          "template": { "contiguous": false, "units": "ft" },
+          "affects": { "count": "1", "type": "creature", "choice": false, "special": "" },
+          "override": false
+        },
+        "consumption": { "scaling": { "allowed": false }, "spellSlot": false, "targets": [] },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "effects": [],
+        "uses": { "spent": 0, "recovery": [] },
+        "flags": {
+          "cao-the-call-of-the-ancestors": {
+            "action": "hm-move",
+            "tokenFlag": "hm"
+          }
+        },
+        "sort": 20
+      }
+    },
+    "identifier": "hunters-mark-cao",
+    "method": "spell",
+    "prepared": 0
+  },
+  "effects": [],
+  "flags": {
+    "cao-the-call-of-the-ancestors": {
+      "spell": true,
+      "hunterMark": true
+    }
+  },
+  "_key": "!items!hunters_mark_cao"
+}

@@ -1,1 +1,5 @@
-.devcontainer/devcontainer.json
+node_modules/
+.DS_Store
+Thumbs.db
+.devcontainer/
+packs/*/
