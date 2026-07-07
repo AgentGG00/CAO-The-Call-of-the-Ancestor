@@ -44,7 +44,7 @@ export class MastercraftedRecipeSheet extends foundry.applications.sheets.journa
         config: {
             classes: ["standard-form", "scrollable"],
             scrollable: [""],
-            template: "modules/cao-the-call-of-the-ancestors/templates/recipe-config.hbs",
+            template: "modules/cao-the-call-of-the-ancestors/templates/crafting/recipe-config.hbs",
         },
     };
 
@@ -54,10 +54,10 @@ export class MastercraftedRecipeSheet extends foundry.applications.sheets.journa
     static VIEW_PARTS = {
         content: {
             // root: true,
-            template: "modules/cao-the-call-of-the-ancestors/templates/recipe-sheet-text.hbs"
+            template: "modules/cao-the-call-of-the-ancestors/templates/crafting/recipe-sheet-text.hbs"
         },
         recipe: {
-            template: "modules/cao-the-call-of-the-ancestors/templates/recipe-sheet.hbs",
+            template: "modules/cao-the-call-of-the-ancestors/templates/crafting/recipe-sheet.hbs",
         },
     };
 

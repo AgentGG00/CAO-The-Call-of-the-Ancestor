@@ -54,14 +54,14 @@ export class RecipeBookApplication extends HandlebarsApplication {
     static get PARTS() {
         return {
             bookHeader: {
-                template: "modules/cao-the-call-of-the-ancestors/templates/book-header.hbs"
+                template: "modules/cao-the-call-of-the-ancestors/templates/crafting/book-header.hbs"
             },
             bookList: {
-                template: "modules/cao-the-call-of-the-ancestors/templates/book-list.hbs",
+                template: "modules/cao-the-call-of-the-ancestors/templates/crafting/book-list.hbs",
                 scrollable: [""]
             },
             bookContent: {
-                template: "modules/cao-the-call-of-the-ancestors/templates/book-content.hbs"
+                template: "modules/cao-the-call-of-the-ancestors/templates/crafting/book-content.hbs"
             }
         }
     }

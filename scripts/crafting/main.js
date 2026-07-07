@@ -9,7 +9,6 @@ import { MastercraftedMigration } from './migration.js';
 import { RecipeBook } from './documents/RecipeBook.js';
 import { Recipe } from './documents/Recipe.js';
 import { CauldronApp } from './apps/CauldronApp.js';
-import "../scss/module.scss";
 
 export const MODULE_ID = 'cao-the-call-of-the-ancestors';
 export const API = {};
