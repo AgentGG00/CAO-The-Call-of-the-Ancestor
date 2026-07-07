@@ -1,12 +1,12 @@
 {
   "id": "cao-the-call-of-the-ancestors",
   "title": "CAO – The Call of the Ancestors",
-  "description": "The Call of the Ancestors core module including crafting, macros, items, and automation helpers.",
-  "version": "0.12.7",
+  "description": "The Call of the Ancestors core module including weapon, magazines, and automation helpers.",
+  "version": "0.1.2",
   "authors": [
     {
       "name": "AgentGG",
-      "url": "https://github.com/AgentGGNik007/CAO-The-Call-of-the-Ancestor"
+      "url": "https://github.com/AgentGG00"
     }
   ],
   "license": "MIT",
@@ -23,56 +23,16 @@
           "minimum": "5.2.5"
         }
       }
+    ],
+    "requires": [
+      {
+        "id": "mastercrafted",
+        "type": "module"
+      }
     ]
   },
-  "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    },
-    {
-      "lang": "de",
-      "name": "Deutsch",
-      "path": "languages/de.json"
-    },
-    {
-      "lang": "fr",
-      "name": "Français",
-      "path": "languages/fr.json"
-    },
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "languages/es.json"
-    },
-    {
-      "lang": "it",
-      "name": "Italiano",
-      "path": "languages/it.json"
-    },
-    {
-      "lang": "ru",
-      "name": "Русский",
-      "path": "languages/ru.json"
-    },
-    {
-      "lang": "ja",
-      "name": "日本語",
-      "path": "languages/ja.json"
-    },
-    {
-      "lang": "cn",
-      "name": "中文",
-      "path": "languages/cn.json"
-    }
-  ],
   "esmodules": [
-    "scripts/crafting/main.js",
     "scripts/weapon/main.js"
-  ],
-  "styles": [
-    "styles/module.css"
   ],
   "packs": [
     {
